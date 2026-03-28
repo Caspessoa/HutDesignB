@@ -31,9 +31,13 @@ export default function SolucoesDigitais() {
 
             <p className="text-[#4B5563]">Sites institucionais, e-commerces e sistemas web robustos. Levamos seu negócio para a internet com tecnologia de ponta.</p>
 
-            <button className="mt-auto px-6 py-2 bg-purple-600 text-white font-medium rounded-full hover:bg-purple-700 transition-colors text-sm">
-              Saiba mais
-            </button>
+            <a href="#contato" 
+                className="mt-auto inline-flex items-center text-[#6B0F9C] font-bold hover:underline transition-all text-sm group">
+                Saiba mais
+                <span className="ml-2">
+                  →
+                </span>
+              </a>
             
           </div>
 
@@ -48,9 +52,13 @@ export default function SolucoesDigitais() {
 
             <p className="text-[#4B5563]">Esteja sempre perto de seus clientes. Desenvolvimento de aplicativos nativos e híbridos para iOS e Android.</p>
 
-            <button className="mt-auto px-6 py-2 bg-purple-600 text-white font-medium rounded-full hover:bg-purple-700 transition-colors text-sm">
-              Saiba mais
-            </button>
+             <a href="#contato" 
+                className="mt-auto inline-flex items-center text-[#6B0F9C] font-bold hover:underline transition-all text-sm group">
+                Saiba mais
+                <span className="ml-2">
+                  →
+                </span>
+              </a>
 
           </div>
 
@@ -65,9 +73,13 @@ export default function SolucoesDigitais() {
 
             <p className="text-[#4B5563]">Tem uma ideia inovadora? Transformamos sua visão em software funcional com consultoria especializada.</p>
 
-            <button className="mt-auto px-6 py-2 bg-purple-600 text-white font-medium rounded-full hover:bg-purple-700 transition-colors text-sm">
-              Saiba mais
-            </button>
+             <a href="#contato" 
+                className="mt-auto inline-flex items-center text-[#6B0F9C] font-bold hover:underline transition-all text-sm group">
+                Saiba mais
+                <span className="ml-2">
+                  →
+                </span>
+              </a>
 
           </div>
 
