@@ -4,26 +4,37 @@ import smartphoneIcon from '../../assets/solucoes-cards-icons/smartphone-icon.sv
 
 export default function SolucoesDigitais() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-[#FFFFFF]">
 
-      <div className="container mx-auto px-4 text-center">
+      <div className="container max-w-[1100px] mx-auto px-8 flex flex-col items-center gap-10">
         
-        <h4 className="text-[#A4DE02] font-bold tracking-widest mb-2">
-            O QUE FAZEMOS
-        </h4>
+        <div className="textos flex flex-col items-center text-center px-4">
 
-        <h2 className="text-4xl font-bold text-[#1F2937] mb-8">
-          Soluções Digitais Completas
-        </h2>
+          {/* Subtitulo verde */}
+           <span className="text-[#A4DE02] text-sm font-bold uppercase tracking-widest mb-1">
+              O QUE FAZEMOS
+            </span>
 
-        <p className="text-[#4B5563]">Temos a solução e as ferramentas perfeitas a sua necessidade, do conceito ao código.</p>
+          {/* Título da seção*/}
+          <h2 className="text-[#1F2937] text-2xl md:text-[32px] font-extrabold mb-4 max-w-2xl leading-tight">
+            Soluções Digitais Completas
+          </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Parágrafo de descrição */}
+          <p className="text-[#4B5563] text-base md:text-xl max-w-2xl">
+            Temos a solução e as ferramentas perfeitas a sua necessidade, do conceito ao código.
+          </p>
+
+        </div>
+
+       
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 justify-items-center mt-6">
 
           {/* --- CARD 1: PLATAFORMAS WEB --- */}
-          <div className="card1 p-6 border rounded-lg shadow-sm">
+          <div className="card1 w-full md:max-w-[384px] min-h-[300px] p-8 rounded-[16px] border border-gray-100 bg-white flex flex-col items-center text-center shadow-sm">
             
-            <div className='iconeMonitor'>
+            <div className='iconeMonitor mb-6'>
               <img src={monitorIcon} alt='Monitor'/>
             </div>
 
@@ -42,9 +53,9 @@ export default function SolucoesDigitais() {
           </div>
 
           {/* --- CARD 2: APLICATIVOS MOBILE --- */}
-          <div className="card2 p-6 border rounded-lg shadow-sm">
+          <div className="card2 w-full md:max-w-[384px] min-h-[300px] p-8 rounded-[16px] border border-gray-100 bg-white flex flex-col items-center text-center shadow-sm">
 
-            <div className='iconeSmartphone'>
+            <div className="iconeSmartphone mb-6">
               <img src={smartphoneIcon} alt='Smartphone'/>
             </div>
             
@@ -63,9 +74,9 @@ export default function SolucoesDigitais() {
           </div>
 
           {/* --- CARD 3: Solucoes Personalizadas --- */}
-          <div className="card3 p-6 border rounded-lg shadow-sm">
+          <div className="card3 w-full md:max-w-[384px] min-h-[300px] p-8 rounded-[16px] border border-gray-100 bg-white flex flex-col items-center text-center shadow-sm">
 
-            <div className='iconeCode'>
+            <div className='iconeCode mb-6'>
               <img src={codeIcon} alt='Code'/>
             </div>
 
