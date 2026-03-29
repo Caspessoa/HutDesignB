@@ -11,17 +11,17 @@ export default function SolucoesDigitais() {
         <div className="textos flex flex-col items-center text-center px-4">
 
           {/* Subtitulo verde */}
-           <span className="text-[#A4DE02] text-sm font-bold uppercase tracking-widest mb-1">
+           <span className="text-[#A4DE02] font-semibold text-[14px] leading-[20px] uppercase tracking-[0.7px] mb-1">
               O QUE FAZEMOS
             </span>
 
           {/* Título da seção*/}
-          <h2 className="text-[#1F2937] text-2xl md:text-[32px] font-extrabold mb-4 max-w-2xl leading-tight">
+          <h2 className="text-[#1F2937] font-bold text-[36px] leading-[40px] text-center mb-2">
             Soluções Digitais Completas
           </h2>
 
           {/* Parágrafo de descrição */}
-          <p className="text-[#4B5563] text-base md:text-xl max-w-2xl">
+          <p className="text-[#4B5563] font-normal text-base md:text-[18px] leading-relaxed max-w-[672px] text-center mx-auto pt-[6.5px]">
             Temos a solução e as ferramentas perfeitas a sua necessidade, do conceito ao código.
           </p>
 
@@ -29,7 +29,7 @@ export default function SolucoesDigitais() {
 
        
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 justify-items-center mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 justify-items-center mt-2">
 
           {/* --- CARD 1: PLATAFORMAS WEB --- */}
           <div className="card1 w-full md:max-w-[384px] min-h-[300px] p-8 rounded-[16px] border border-gray-100 bg-white flex flex-col items-center text-center shadow-sm">
@@ -38,12 +38,12 @@ export default function SolucoesDigitais() {
               <img src={monitorIcon} alt='Monitor'/>
             </div>
 
-            <h2 className="text-xl font-bold text-[#1F2937] mb-3">Plataformas Web</h2>
+            <h2 className="text-[#1F2937] font-bold text-[20px] leading-[28px] text-center mb-3">Plataformas Web</h2>
 
-            <p className="text-[#4B5563]">Sites institucionais, e-commerces e sistemas web robustos. Levamos seu negócio para a internet com tecnologia de ponta.</p>
+            <p className="text-[#4B5563] font-normal text-[16px] leading-[23px] text-center max-w-[296px] mx-auto">Sites institucionais, e-commerces e sistemas web robustos. Levamos seu negócio para a internet com tecnologia de ponta.</p>
 
             <a href="#contato" 
-                className="mt-auto inline-flex items-center text-[#6B0F9C] font-bold hover:underline transition-all text-sm group">
+                className="text-[#6B0F9C] font-semibold text-[16px] leading-[24px] text-center inline-flex items-center hover:underline transition-all group mt-auto">
                 Saiba mais
                 <span className="ml-2">
                   →
@@ -59,12 +59,12 @@ export default function SolucoesDigitais() {
               <img src={smartphoneIcon} alt='Smartphone'/>
             </div>
             
-            <h2 className="text-xl font-bold text-[#1F2937] mb-3">Aplicativos Mobile</h2>
+            <h2 className="text-[#1F2937] font-bold text-[20px] leading-[28px] text-center mb-3">Aplicativos Mobile</h2>
 
-            <p className="text-[#4B5563]">Esteja sempre perto de seus clientes. Desenvolvimento de aplicativos nativos e híbridos para iOS e Android.</p>
+            <p className="text-[#4B5563] font-normal text-[16px] leading-[23px] text-center max-w-[296px] mx-auto">Esteja sempre perto de seus clientes. Desenvolvimento de aplicativos nativos e híbridos para iOS e Android.</p>
 
              <a href="#contato" 
-                className="mt-auto inline-flex items-center text-[#6B0F9C] font-bold hover:underline transition-all text-sm group">
+                className="text-[#6B0F9C] font-semibold text-[16px] leading-[24px] text-center inline-flex items-center hover:underline transition-all group mt-auto">
                 Saiba mais
                 <span className="ml-2">
                   →
@@ -80,12 +80,12 @@ export default function SolucoesDigitais() {
               <img src={codeIcon} alt='Code'/>
             </div>
 
-            <h2 className="text-xl font-bold text-[#1F2937] mb-3">Soluções Personalizadas</h2>
+            <h2 className="text-[#1F2937] font-bold text-[20px] leading-[28px] text-center mb-3">Soluções Personalizadas</h2>
 
-            <p className="text-[#4B5563]">Tem uma ideia inovadora? Transformamos sua visão em software funcional com consultoria especializada.</p>
+            <p className="text-[#4B5563] font-normal text-[16px] leading-[23px] text-center max-w-[296px] mx-auto">Tem uma ideia inovadora? Transformamos sua visão em software funcional com consultoria especializada.</p>
 
              <a href="#contato" 
-                className="mt-auto inline-flex items-center text-[#6B0F9C] font-bold hover:underline transition-all text-sm group">
+                className="text-[#6B0F9C] font-semibold text-[16px] leading-[24px] text-center inline-flex items-center hover:underline transition-all group mt-auto">
                 Saiba mais
                 <span className="ml-2">
                   →
