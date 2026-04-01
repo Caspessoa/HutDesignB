@@ -6,7 +6,7 @@ export default function SolucoesDigitais() {
   return (
     <section className="py-16 bg-[#FFFFFF]">
 
-      <div className="container max-w-[1100px] mx-auto px-8 flex flex-col items-center gap-10">
+      <div className="max-w-[1280px] mx-auto px-[32px] flex flex-col items-center gap-[64px]">
         
         <div className="textos flex flex-col items-center text-center px-4">
 
@@ -21,8 +21,8 @@ export default function SolucoesDigitais() {
           </h2>
 
           {/* Parágrafo de descrição */}
-          <p className="text-[#4B5563] font-normal text-base md:text-[18px] leading-relaxed max-w-[672px] text-center mx-auto pt-[6.5px]">
-            Temos a solução e as ferramentas perfeitas a sua necessidade, do conceito ao código.
+          <p className="text-[#4B5563] font-normal text-base md:text-[20px] leading-relaxed max-w-[672px] text-center mx-auto pt-[6.5px]">
+            Temos a solução e as ferramentas perfeitas a sua necessidade, do<br></br> conceito ao código.
           </p>
 
         </div>
@@ -32,9 +32,9 @@ export default function SolucoesDigitais() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 justify-items-center mt-2">
 
           {/* --- CARD 1: PLATAFORMAS WEB --- */}
-          <div className="card1 w-full md:max-w-[384px] min-h-[300px] p-8 rounded-[16px] border border-gray-100 bg-white flex flex-col items-center text-center shadow-sm">
+          <div className="card1 w-full md:max-w-[384px] min-h-[346px] p-8 rounded-[16px] border border-gray-100 bg-white flex flex-col items-center text-center  shadow-[0_8px_10px_-6px_rgba(0,0,0,0.1),0_20px_25px_-5px_rgba(0,0,0,0.1)] bg-white rounded-[16px]">
             
-            <div className='iconeMonitor mb-6'>
+            <div className="iconeMonitor w-16 h-16 rounded-[16px] flex items-center justify-center bg-[#6B0F9C1A] mb-6">
               <img src={monitorIcon} alt='Monitor'/>
             </div>
 
@@ -53,9 +53,9 @@ export default function SolucoesDigitais() {
           </div>
 
           {/* --- CARD 2: APLICATIVOS MOBILE --- */}
-          <div className="card2 w-full md:max-w-[384px] min-h-[300px] p-8 rounded-[16px] border border-gray-100 bg-white flex flex-col items-center text-center shadow-sm">
+          <div className="card2 w-full md:max-w-[384px] min-h-[346px] p-8 rounded-[16px] border border-gray-100 bg-white flex flex-col items-center text-center shadow-[0_8px_10px_-6px_rgba(0,0,0,0.1),0_20px_25px_-5px_rgba(0,0,0,0.1)] bg-white rounded-[16px]">
 
-            <div className="iconeSmartphone mb-6">
+            <div className="iconeSmartphone w-16 h-16 rounded-[16px] flex items-center justify-center bg-[#A4DE021A] mb-6">
               <img src={smartphoneIcon} alt='Smartphone'/>
             </div>
             
@@ -74,9 +74,9 @@ export default function SolucoesDigitais() {
           </div>
 
           {/* --- CARD 3: Solucoes Personalizadas --- */}
-          <div className="card3 w-full md:max-w-[384px] min-h-[300px] p-8 rounded-[16px] border border-gray-100 bg-white flex flex-col items-center text-center shadow-sm">
+          <div className="card3 w-full md:max-w-[384px] min-h-[346px] p-8 rounded-[16px] border border-gray-100 bg-white flex flex-col items-center text-center shadow-[0_8px_10px_-6px_rgba(0,0,0,0.1),0_20px_25px_-5px_rgba(0,0,0,0.1)] bg-white rounded-[16px]">
 
-            <div className='iconeCode mb-6'>
+            <div className="iconeCode w-16 h-16 rounded-[16px] flex items-center justify-center bg-[#A855F71A] mb-6 mb-6">
               <img src={codeIcon} alt='Code'/>
             </div>
 
