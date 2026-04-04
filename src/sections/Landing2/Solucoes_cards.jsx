@@ -8,20 +8,20 @@ export default function SolucoesDigitais() {
 
       <div className="max-w-[1280px] mx-auto px-[32px] flex flex-col items-center gap-[64px]">
         
-        <div className="textos flex flex-col items-center text-center px-4">
+        <div className="estilo-container-texto-secao">
 
-          {/* Subtitulo verde */}
-           <span className="text-[#A4DE02] font-semibold text-[14px] leading-[20px] uppercase tracking-[0.7px] mb-1">
+          {/* Subtitulo */}
+           <span className="text-[#A4DE02] estilo-subtitulo-secao">
               O QUE FAZEMOS
             </span>
 
           {/* Título da seção*/}
-          <h2 className="text-[#1F2937] font-bold text-[36px] leading-[40px] text-center mb-2">
+          <h2 className="text-[#1F2937] estilo-titulo-secao">
             Soluções Digitais Completas
           </h2>
 
           {/* Parágrafo de descrição */}
-          <p className="text-[#4B5563] font-normal text-base md:text-[20px] leading-relaxed max-w-[672px] text-center mx-auto pt-[6.5px]">
+          <p className="text-[#4B5563] estilo-descricao-secao">
             Temos a solução e as ferramentas perfeitas a sua necessidade, do<br></br> conceito ao código.
           </p>
 

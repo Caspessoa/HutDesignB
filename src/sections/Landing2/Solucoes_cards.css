@@ -1,10 +1,65 @@
+/*ESTILO DOS TEXTOS FORA DOS CARDS*/
+
+/*Container de Textos da seção*/
+@utility estilo-container-texto-secao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+}
+
+/*Subtítulo-seção*/
+@utility estilo-subtitulo-secao {
+  font-weight: 600;  
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px; 
+  margin-bottom: 0.25rem;
+}
+
+/*Título-seção*/
+@utility estilo-titulo-secao{
+  font-weight: 700;
+  font-size: 28px;        
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 0.5rem;
+
+  @media (min-width: 768px) {
+    font-size: 36px;    
+    line-height: 40px;
+  }
+}
+
+/*Parágrado-descrição*/
+@utility estilo-descricao-secao {
+  font-weight: 400; 
+  font-size: 16px; 
+  line-height: 1.625; 
+  text-align: center;
+  max-width: 672px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6.5px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+
+
 /* ESTILO DOS CARDS */
 @utility estilo-cards{
 
-    /* Layout e Tamanho */
+/* Layout e Tamanho */
   width: 100%;
   min-height: 346px;
-  padding: 2rem; /* p-8 */
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,13 +74,12 @@
   box-shadow: 0 8px 10px -6px rgba(0,0,0,0.1), 0 20px 25px -5px rgba(0,0,0,0.1);
 
   /* Animação e Hover */
-  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1); /* duration-300 */
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1); 
   
   &:hover {
-    transform: translateY(-0.5rem); /* hover:-translate-y-2 */
+    transform: translateY(-0.5rem); 
   }
 
-  /* Responsivo: No desktop ele ganha largura máxima */
   @media (min-width: 768px) {
     max-width: 384px;
   }
@@ -56,12 +110,12 @@
 /* ESTILO TEXTOS DE DENTRO DOS CARDS */
 @utility estilo-texto-card {
   color: #4B5563;
-  font-weight: 400; /* font-normal */
+  font-weight: 400; 
   font-size: 16px;
   line-height: 23px;
   text-align: center;
   max-width: 296px;
-  margin-left: auto; /* mx-auto */
+  margin-left: auto; 
   margin-right: auto;
 }
 
@@ -97,7 +151,7 @@
 
   /* Estilo da Seta */
   & .seta {
-    margin-left: 0.5rem; /* ml-2 */
+    margin-left: 0.5rem;
     transition: transform 300ms ease;
   }
 
@@ -108,7 +162,8 @@
     }
     
     & .seta {
-      transform: translateX(4px); /* translate-x-1 */
+      transform: translateX(4px); 
     }
   }
 }
+
