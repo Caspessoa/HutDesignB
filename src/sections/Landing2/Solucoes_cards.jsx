@@ -42,13 +42,17 @@ export default function SolucoesDigitais() {
 
             <p className="text-[#4B5563] font-normal text-[16px] leading-[23px] text-center max-w-[296px] mx-auto">Sites institucionais, e-commerces e sistemas web robustos. Levamos seu negócio para a internet com tecnologia de ponta.</p>
 
-            <a href="#contato" 
-                className="text-[#6B0F9C] font-semibold text-[16px] leading-[24px] text-center inline-flex items-center hover:underline transition-all group mt-auto">
-                Saiba mais
-                <span className="ml-2">
+           <a href="#contato" 
+                className="relative text-[#6B0F9C] font-semibold text-[16px] leading-[24px] text-center inline-flex items-center group mt-auto w-fit">
+                <span className="relative">
+                  Saiba mais
+                  {/* Linha que anima */}
+                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#6B0F9C] transition-all duration-300 group-hover:w-full"></span>
+                </span>
+                <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
                   →
                 </span>
-              </a>
+          </a>
             
           </div>
 
@@ -64,13 +68,16 @@ export default function SolucoesDigitais() {
             <p className="text-[#4B5563] font-normal text-[16px] leading-[23px] text-center max-w-[296px] mx-auto">Esteja sempre perto de seus clientes. Desenvolvimento de aplicativos nativos e híbridos para iOS e Android.</p>
 
              <a href="#contato" 
-                className="text-[#6B0F9C] font-semibold text-[16px] leading-[24px] text-center inline-flex items-center hover:underline transition-all group mt-auto">
-                Saiba mais
-                <span className="ml-2">
+                className="relative text-[#6B0F9C] font-semibold text-[16px] leading-[24px] text-center inline-flex items-center group mt-auto w-fit">
+                <span className="relative">
+                  Saiba mais
+                  {/* Linha que anima */}
+                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#6B0F9C] transition-all duration-300 group-hover:w-full"></span>
+                </span>
+                <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
                   →
                 </span>
-              </a>
-
+            </a>
           </div>
 
           {/* --- CARD 3: Solucoes Personalizadas --- */}
@@ -85,12 +92,16 @@ export default function SolucoesDigitais() {
             <p className="text-[#4B5563] font-normal text-[16px] leading-[23px] text-center max-w-[296px] mx-auto">Tem uma ideia inovadora? Transformamos sua visão em software funcional com consultoria especializada.</p>
 
              <a href="#contato" 
-                className="text-[#6B0F9C] font-semibold text-[16px] leading-[24px] text-center inline-flex items-center hover:underline transition-all group mt-auto">
-                Saiba mais
-                <span className="ml-2">
+                className="relative text-[#6B0F9C] font-semibold text-[16px] leading-[24px] text-center inline-flex items-center group mt-auto w-fit">
+                <span className="relative">
+                  Saiba mais
+                  {/* Linha que anima */}
+                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#6B0F9C] transition-all duration-300 group-hover:w-full"></span>
+                </span>
+                <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
                   →
                 </span>
-              </a>
+            </a>
 
           </div>
 
