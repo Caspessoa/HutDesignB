@@ -1,44 +1,59 @@
-# Dependências
+# ================================
+# 📦 Dependencies
+# ================================
 node_modules/
-.pnp
-.pnp.js
 
-# Testes
-coverage/
-
-# Build / Produção
+# ================================
+# 🏗️ Build / Output
+# ================================
 dist/
 build/
-.next/
-out/
-build-static/
+.vite/
 
-# Logs
+# ================================
+# 🔐 Environment variables
+# ================================
+.env
+.env.*
+!.env.example
+
+# ================================
+# 📄 Logs
+# ================================
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
+pnpm-debug.log*
 
-# Variáveis de Ambiente (SEGURANÇA!)
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# ================================
+# 🧪 Coverage
+# ================================
+coverage/
 
-# Editor / IDE (VS Code, WebStorm, etc)
+# ================================
+# 🧠 Cache
+# ================================
+.cache/
+.eslintcache
+
+# ================================
+# 💻 IDE / Editor
+# ================================
 .vscode/
 .idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+*.swp
+*.swo
 
-# Sistema Operacional
+# ================================
+# 🖥️ OS
+# ================================
 .DS_Store
 Thumbs.db
 
-# Tailwind / PostCSS (arquivos temporários se houver)
-.tailwindcss/
-.postcsscache
+# ================================
+# 🚀 Misc
+# ================================
+*.local
+>>>>>>> main

@@ -1,19 +1,24 @@
+import React from "react";
+import { Header } from "./components/Header.jsx";
+import { Historia } from "./sections/Landing2/Historia.jsx";
+import Footer from "./components/Footer.jsx";
 import Section3 from './sections/Landing2/Section3/Section3';
-
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen flex flex-col bg-gray-50">
       
-      <main>
+      {/* Conteúdo principal */}
+      <div className="flex-grow">
+        <Header />
+        <Historia />
+        <Section3 />
+      </div>
 
-        <Section3/>
-    
-      </main>
-
-     
+      {/* Footer sempre no final */}
+      <Footer />
+      
     </div>
   );
 }
-
 export default App;
