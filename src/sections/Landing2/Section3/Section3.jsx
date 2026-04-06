@@ -1,3 +1,4 @@
+import Card from '../../../components/Section3-components/card';
 import monitorIcon from '../../../assets/section3-icons/monitor-icon.svg';
 import codeIcon from '../../../assets/section3-icons/code-icon.svg';
 import smartphoneIcon from '../../../assets/section3-icons/smartphone-icon.svg';
@@ -31,65 +32,28 @@ export default function Section3() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 justify-items-center mt-2">
 
           {/* --- CARD 1: PLATAFORMAS WEB --- */}
-          <div className="estilo-cards">
-            
-            <div className="IconeMonitor estilo-icones bg-[#6B0F9C1A]">
-              <img src={monitorIcon} alt='Monitor'/>
-            </div>
-
-            <h2 className="estilo-titulo-card">Plataformas Web</h2> 
-
-            <p className="TextoCard1 estilo-texto-card">
-              Sites institucionais, e-commerces e sistemas web robustos. Levamos seu negócio para a internet com tecnologia de ponta.
-            </p>
-
-           <a href="#contato" className="link-saiba-mais">
-                <span className ="linha-animada"> Saiba mais </span>
-                <span className = "seta">→</span>
-          </a>
-            
-          </div>
+          <Card 
+            icone={monitorIcon} 
+            titulo="Plataformas Web" 
+            descricao="Sites institucionais, e-commerces e sistemas web robustos. Levamos seu negócio para a internet com tecnologia de ponta." 
+            corFundoIcone="bg-[#6B0F9C1A]"
+          />
 
           {/* --- CARD 2: APLICATIVOS MOBILE --- */}
-          <div className="estilo-cards">
+          <Card
+            icone={smartphoneIcon} 
+            titulo="Aplicativos Mobile" 
+            descricao="Esteja sempre perto de seus clientes. Desenvolvimento de aplicativos nativos e híbridos para iOS e Android." 
+            corFundoIcone="bg-[#6B0F9C1A]"
+          />
 
-            <div className="iconeSmartphone estilo-icones bg-[#A4DE021A]">
-              <img src={smartphoneIcon} alt='Smartphone'/>
-            </div>
-            
-            <h2 className="estilo-titulo-card">Aplicativos Mobile</h2>
-
-            <p className="TextoCard2 estilo-texto-card">
-              Esteja sempre perto de seus clientes. Desenvolvimento de aplicativos nativos e híbridos para iOS e Android.
-            </p>
-
-            <a href="#contato" className="link-saiba-mais">
-                <span className ="linha-animada"> Saiba mais </span>
-                <span className = "seta">→</span>
-            </a>
-
-          </div>
 
           {/* --- CARD 3: Solucoes Personalizadas --- */}
-          <div className="estilo-cards">
-
-            <div className="iconeCode estilo-icones bg-[#A855F71A]">
-              <img src={codeIcon} alt='Code'/>
-            </div>
-
-            <h2 className="estilo-titulo-card">Soluções Personalizadas</h2>
-
-            <p className="TextoCard3 estilo-texto-card">
-              Tem uma ideia inovadora? Transformamos sua visão em software funcional com consultoria especializada.
-            </p>
-
-            <a href="#contato" className="link-saiba-mais">
-                <span className ="linha-animada"> Saiba mais </span>
-                <span className = "seta">→</span>
-            </a>
-
-          </div>
-
+          <Card
+            icone={codeIcon} 
+            titulo="Soluções Personalizadas" 
+            descricao="Tem uma ideia inovadora? Transformamos sua visão em software funcional com consultoria especializada."
+          />
         </div>
       </div>
     </section>
