@@ -1,6 +1,7 @@
 import React from "react";
 import { Header } from "./components/Header.jsx";
 import { Historia } from "./sections/Landing2/Historia.jsx";
+import { QuemSomos } from "./sections/Landing2/quemSomos.jsx";
 import Footer from "./components/Footer.jsx";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <div className="flex-grow">
         <Header />
         <Historia />
+        <QuemSomos />
       </div>
 
       {/* Footer sempre no final */}
