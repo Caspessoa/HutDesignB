@@ -1,4 +1,4 @@
-import SolucoesDigitais from './sections/Landing2/Solucoes_cards';
+import Section3 from './sections/Landing2/Section3/Section3';
 
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
       
       <main>
 
-        <SolucoesDigitais/>
+        <Section3/>
     
       </main>
 

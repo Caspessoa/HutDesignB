@@ -1,8 +1,8 @@
-import monitorIcon from '../../assets/solucoes-cards-icons/monitor-icon.svg';
-import codeIcon from '../../assets/solucoes-cards-icons/code-icon.svg';
-import smartphoneIcon from '../../assets/solucoes-cards-icons/smartphone-icon.svg';
+import monitorIcon from '../../../assets/section3-icons/monitor-icon.svg';
+import codeIcon from '../../../assets/section3-icons/code-icon.svg';
+import smartphoneIcon from '../../../assets/section3-icons/smartphone-icon.svg';
 
-export default function SolucoesDigitais() {
+export default function Section3() {
   return (
     <section className="py-16 bg-[#FFFFFF]">
 
@@ -21,7 +21,7 @@ export default function SolucoesDigitais() {
           </h2>
 
           {/* Parágrafo de descrição */}
-          <p className="text-[#4B5563] estilo-descricao-secao">
+          <p className="text-[#4B5563] ">
             Temos a solução e as ferramentas perfeitas a sua necessidade, do<br></br> conceito ao código.
           </p>
 
@@ -37,7 +37,7 @@ export default function SolucoesDigitais() {
               <img src={monitorIcon} alt='Monitor'/>
             </div>
 
-            <h2 className="estilo-titulo-card">Plataformas Web</h2>
+            <h2 className="estilo-titulo-card">Plataformas Web</h2> 
 
             <p className="TextoCard1 estilo-texto-card">
               Sites institucionais, e-commerces e sistemas web robustos. Levamos seu negócio para a internet com tecnologia de ponta.
