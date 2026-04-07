@@ -1,5 +1,6 @@
 /* ESTILO DOS CARDS */
-@utility estilo-cards{
+@layer utilities {
+  .estilo-cards{
 
 /* Layout e Tamanho */
   width: 100%;
@@ -32,83 +33,82 @@
 }
 
 /* ESTILO DOS ÍCONES */
-@utility estilo-icones{
-  width: 4rem; 
-  height: 4rem; 
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem; 
-}
+  .estilo-icones{
+    width: 4rem; 
+    height: 4rem; 
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem; 
+  }
 
 /*ESTILO TÍTULO DOS CARDS*/
-@utility estilo-titulo-card {
-  color: #1F2937;
-  font-weight: 700;   
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  margin-bottom: 0.75rem;
-}
+  .estilo-titulo-card {
+    color: #1F2937;
+    font-weight: 700;   
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 0.75rem;
+  }
 
 /* ESTILO TEXTOS DE DENTRO DOS CARDS */
-@utility estilo-texto-card {
-  color: #4B5563;
-  font-weight: 400; 
-  font-size: 16px;
-  line-height: 23px;
-  text-align: center;
-  max-width: 296px;
-  margin-left: auto; 
-  margin-right: auto;
-}
+  .estilo-texto-card {
+    color: #4B5563;
+    font-weight: 400; 
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    max-width: 296px;
+    margin-left: auto; 
+    margin-right: auto;
+  }
 
 /*ESTILO LINK DOS CARDS*/
-@utility link-saiba-mais {
-
-  position: relative;
-  color: #6B0F9C;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  display: inline-flex;
-  align-items: center;
-  margin-top: auto;
-  width: fit-content;
-  cursor: pointer;
-
-  /* Estilo da Linha animada*/
-  & .linha-animada {
+  .link-saiba-mais {
     position: relative;
-    
-    &::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -4px;
-      width: 0;
-      height: 2px;
-      background-color: #6B0F9C;
-      transition: width 300ms ease;
-    }
-  }
+    color: #6B0F9C;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: auto;
+    width: fit-content;
+    cursor: pointer;
 
-  /* Estilo da Seta */
-  & .seta {
-    margin-left: 0.5rem;
-    transition: transform 300ms ease;
-  }
-
-  /* HOVERS */
-  &:hover {
-    & .linha-animada::after {
-      width: 100%;
+    /* Estilo da Linha animada*/
+    & .linha-animada {
+      position: relative;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0;
+        height: 2px;
+        background-color: #6B0F9C;
+        transition: width 300ms ease;
+      }
     }
-    
+
+    /* Estilo da Seta */
     & .seta {
-      transform: translateX(4px); 
+      margin-left: 0.5rem;
+      transition: transform 300ms ease;
+    }
+
+    /* HOVERS */
+    &:hover {
+      & .linha-animada::after {
+        width: 100%;
+      }
+      
+      & .seta {
+        transform: translateX(4px); 
+      }
     }
   }
 }
-

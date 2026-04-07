@@ -1,55 +1,54 @@
-/*ESTILO DOS TEXTOS FORA DOS CARDS*/
-
 /*Container de Textos da seção*/
-@utility estilo-container-texto-secao {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  width: 100%;
-}
+@layer utilities {
+  .estilo-container-texto-secao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+  }
 
 /*Subtítulo-seção*/
-@utility estilo-subtitulo-secao {
-  font-weight: 600;  
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.7px; 
-  margin-bottom: 0.25rem;
-}
+  .estilo-subtitulo-secao {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px; 
+    margin-bottom: 0.25rem;
+  }
 
 /*Título-seção*/
-@utility estilo-titulo-secao{
-  font-weight: 700;
-  font-size: 28px;        
-  line-height: 32px;
-  text-align: center;
-  margin-bottom: 0.5rem;
+  .estilo-titulo-secao{
+    font-weight: 700;
+    font-size: 28px;        
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 0.5rem;
 
-  @media (min-width: 768px) {
-    font-size: 36px;    
-    line-height: 40px;
+    @media (min-width: 768px) {
+      font-size: 36px;    
+      line-height: 40px;
+    }
   }
-}
 
 /*Parágrado-descrição*/
-@utility estilo-descricao-secao {
-  font-weight: 400; 
-  font-size: 16px; 
-  line-height: 1.625; 
-  text-align: center;
-  max-width: 672px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 6.5px;
+  .estilo-descricao-secao {
+    font-weight: 400; 
+    font-size: 16px; 
+    line-height: 1.625; 
+    text-align: center;
+    max-width: 672px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6.5px;
 
-  @media (min-width: 768px) {
-    font-size: 20px;
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
   }
 }
-
 
 
