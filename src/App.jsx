@@ -2,6 +2,7 @@ import React from "react";
 import { Header } from "./components/Header.jsx";
 import { Historia } from "./sections/Landing2/Historia.jsx";
 import Footer from "./components/Footer.jsx";
+import Section3 from './sections/Landing2/Section3/Section3';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <div className="flex-grow">
         <Header />
         <Historia />
+        <Section3 />
       </div>
 
       {/* Footer sempre no final */}
@@ -19,5 +21,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
