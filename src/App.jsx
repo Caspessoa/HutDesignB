@@ -15,6 +15,7 @@ function App() {
         <Header />
         <Historia />
         <QuemSomos />
+        <Section3 />
         <Orcamento />
       </div>
 
