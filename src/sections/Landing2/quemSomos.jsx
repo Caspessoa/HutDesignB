@@ -53,5 +53,5 @@ export function QuemSomos() {
                 </div>
             </div>
         </section>
-);
+ );
 }

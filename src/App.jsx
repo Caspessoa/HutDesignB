@@ -2,6 +2,7 @@ import React from "react";
 import { Header } from "./components/Header.jsx";
 import { Historia } from "./sections/Landing2/Historia.jsx";
 import { QuemSomos } from "./sections/Landing2/quemSomos.jsx";
+import { Orcamento } from "./sections/Landing2/Orcamento.jsx";
 import Footer from "./components/Footer.jsx";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Historia />
         <QuemSomos />
+        <Orcamento />
       </div>
 
       {/* Footer sempre no final */}
