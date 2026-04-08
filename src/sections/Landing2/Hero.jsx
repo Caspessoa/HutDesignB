@@ -1,9 +1,13 @@
 export default function Hero() {
   return (
-    <section className="bg-[#F9FAFB] py-20 px-6">
+    <section className="relative overflow-hidden bg-[#F9FAFB] py-20 px-6">
       
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-10 items-center">
-        
+
+        {/* BOLAS DESFOCADAS NO BACKGROUND */}
+        <div class="absolute -top-10 -right-10 h-72 w-72 rounded-full bg-[#6B0F9C] opacity-20 blur-3xl"></div>
+        <div class="absolute -bottom-10 -left-10 h-72 w-72 rounded-full bg-[#A4DE02] opacity-20 blur-3xl"></div>
+
         {/* LADO ESQUERDO: HEADER, DESCRIÇÃO E BOTÕES */}
         <div className="flex-1">
                     
@@ -24,11 +28,11 @@ export default function Hero() {
           </p>
 
           <div className="flex gap-4 mt-8">
-            <button className="bg-[#A4DE02] px-6 py-3 rounded-lg font-bold hover:bg-[#8CC800]">
+            <button className="bg-[#A4DE02] px-6 py-3 rounded-lg font-bold hover:bg-[#8CC800] cursor-pointer">
               <div className="text-[#6B0F9C]">Entre para a Hut ➜</div>
             </button>
 
-            <button className="border-1 border-[#D1D5DB] px-6 py-3 rounded-lg hover:bg-gray-200">
+            <button className="border-1 border-[#D1D5DB] px-6 py-3 rounded-lg hover:bg-gray-200 cursor-pointer">
               <div className="text-[#1F2937] text-[16px] leading-[24px] font-medium">Ver Portfólio</div> 
             </button>
           </div>
@@ -36,10 +40,15 @@ export default function Hero() {
 
         {/* LADO DIREITO: IMAGEM E CARD SOBREPOSTO */}
         <div className="relative w-full max-w-[582px] aspect-square flex-shrink-1">
+
+          {/* BOLAS DESFOCADAS ATRÁS DA IMAGEM */}
+          <div class="absolute -top-10 -right-10 h-32 w-32 rounded-full bg-[#A4DE02] opacity-25 blur-md"></div>
+          <div class="absolute -bottom-10 -left-10 h-32 w-32 rounded-full bg-[#6B0F9C] opacity-25 blur-md"></div>
+          
           <img
             src="./src/assets/estudantes.png"
             alt="Equipe"
-            className="w-full h-full object-cover rounded-lg shadow-lg"
+            className="relative w-full h-full object-cover rounded-lg shadow-lg"
           />
 
           <div className="absolute bottom-[24px] left-[24px] right-[24px] bg-white rounded-xl shadow-xl p-6">
