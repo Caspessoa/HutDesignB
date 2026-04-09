@@ -1,5 +1,6 @@
 import React from "react";
 import { Header } from "./components/Header.jsx";
+import { Hero } from "./sections/Landing2/Hero.jsx"
 import { Historia } from "./sections/Landing2/Historia.jsx";
 import { QuemSomos } from "./sections/Landing2/quemSomos.jsx";
 import { Orcamento } from "./sections/Landing2/Orcamento.jsx";
@@ -13,6 +14,7 @@ function App() {
       {/* Conteúdo principal */}
       <div className="flex-grow">
         <Header />
+        <Hero />
         <Historia />
         <QuemSomos />
         <Section3 />
