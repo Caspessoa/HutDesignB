@@ -1,9 +1,9 @@
-import Card from '../../../components/Section3-components/card';
+import {Card} from '../../../components/Section3-components/card';
 import monitorIcon from '../../../assets/section3-icons/monitor-icon.svg';
 import codeIcon from '../../../assets/section3-icons/code-icon.svg';
 import smartphoneIcon from '../../../assets/section3-icons/smartphone-icon.svg';
 
-export default function Section3() {
+export function Section3() {
   return (
     <section className="py-16 bg-[#FFFFFF]">
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './card.css';
 
-export default function CardServico({ icone, titulo, descricao, corFundoIcone }) {
+export function Card({ icone, titulo, descricao, corFundoIcone }) {
   return (
     <div className="estilo-cards">
       

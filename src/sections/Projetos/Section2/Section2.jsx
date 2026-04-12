@@ -7,6 +7,12 @@ function Section2() {
   return (
     <section>
       <h2>Teste de importação</h2>
+
+      <div>
+
+      <></>
+
+      </div>
       
       <img src={Computador} alt="Dashboard Hut Admin" />
     
