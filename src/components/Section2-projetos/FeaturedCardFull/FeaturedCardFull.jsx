@@ -1,12 +1,15 @@
-import './cardProjetos.css';
+import './FeaturedCardFull.css';
 
-export function CardProjetos({ titulo, descricao, imagem, tag, corSombra }) {
+export function FeaturedCardFull({ titulo, descricao, imagem, tag, corSombra }) {
   const estiloFundo = {
-    backgroundImage: `linear-gradient(to top, ${corSombra || 'rgba(0,0,0,0.9)'} 0%, rgba(0,0,0,0) 70%), url(${imagem})`
+    backgroundImage: `linear-gradient(to top, ${corSombra || 'rgba(0,0,0,0.9)'} 0%, rgba(0,0,0,0) 70%), url(${imagem})`,
+    height: '494px',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
   };
 
   return (
-    <div className="project-card" style={estiloFundo}>
+    <div className="FeaturedCardFull" style={estiloFundo}>
       <div className="project-content">
         
         {tag && (
