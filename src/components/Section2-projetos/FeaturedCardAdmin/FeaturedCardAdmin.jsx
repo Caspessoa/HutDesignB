@@ -1,33 +1,30 @@
-import './FeaturedCardAdmin.css';
-
-export function FeaturedCardAdmin({ titulo, descricao, imagem, tag, corSombra }) {
-  const estiloFundo = {
-    backgroundImage: `linear-gradient(to top, ${corSombra || 'rgba(0,0,0,0.9)'} 0%, rgba(0,0,0,0) 70%), url(${imagem})`,
-    height: '494px',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center'
-  };
-
+export function FeaturedCardAdmin({ titulo, descricao, imagem }) {
   return (
-    <div className="FeaturedCardAdmin" style={estiloFundo}>
-      <div className="project-content">
-        
-        {tag && (
-          <div className="project-tag-container">
-            <span className="project-tag">{tag}</span>
-          </div>
-        )}
+    <div className="FeaturedCardAdmin">
+      {/* Lado Esquerdo: Laptop */}
+      <div className="admin-image-container">
+        <img src={imagem} alt={titulo} className="admin-laptop-img" />
+      </div>
 
-        <h2 className="project-title">{titulo}</h2>
+      {/* Lado Direito: Texto */}
+      <div className="admin-text-container">
+        <div className="admin-header">
+          <h2 className="admin-main-title">{titulo}</h2>
+          <p className="admin-description">{descricao}</p>
+        </div>
 
-        <p className="project-description">
-          {descricao}
-        </p>
+        <ul className="admin-list">
+          <li>
+            <span className="check-icon">✓</span> Conciliação Automática
+          </li>
+          <li>
+            <span className="check-icon">✓</span> Integração com APIs Bancárias
+          </li>
+        </ul>
 
-        <a href="#caso" className="project-link">
-          <span className="linha-animada-projeto">Ver Caso</span>
-          <span className="seta-projeto">→</span>
-        </a>
+        <button className="admin-details-btn">
+          Ver Detalhes
+        </button>
       </div>
     </div>
   );
