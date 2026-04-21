@@ -1,33 +1,28 @@
 import './FeaturedCardClassic.css';
 
-export function FeaturedCardClassic({ titulo, descricao, imagem, tag, corSombra }) {
-  const estiloFundo = {
-    backgroundImage: `linear-gradient(to top, ${corSombra || 'rgba(0,0,0,0.9)'} 0%, rgba(0,0,0,0) 70%), url(${imagem})`,
-    height: '494px',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center'
-  };
-
+export function FeaturedCardClassic({ titulo, descricao, imagem, tag, tecnologias, icone}) {
   return (
-    <div className="FeaturedCardClassic" style={estiloFundo}>
-      <div className="project-content">
-        
-        {tag && (
-          <div className="project-tag-container">
-            <span className="project-tag">{tag}</span>
-          </div>
-        )}
+    <div className="FeaturedCardClassic">
+      <div className="card-image-wrapper">
+        <img src={imagem} alt={titulo} />
+      </div>
 
-        <h2 className="project-title">{titulo}</h2>
+      <div className="card-content-white">
+        <div className="card-header-row">
+          <div className="card-titles">
+            <h2 className="card-main-title">{titulo}</h2>
+            <span className="card-category">{tag}</span>
+         </div>
+          {icone && <img src={icone} alt="ícone" className="card-icon-svg" />}
+        </div>
 
-        <p className="project-description">
-          {descricao}
-        </p>
+        <p className="card-description-text">{descricao}</p>
 
-        <a href="#caso" className="project-link">
-          <span className="linha-animada-projeto">Ver Caso</span>
-          <span className="seta-projeto">→</span>
-        </a>
+        <div className="card-tags-row">
+          {tecnologias && tecnologias.map((tech) => (
+            <span key={tech} className="tag-item">{tech}</span>
+          ))}
+        </div>
       </div>
     </div>
   );

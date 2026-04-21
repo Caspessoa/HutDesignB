@@ -5,6 +5,7 @@ import Computador from '../../../assets/section2-projetos/hut-admin-image.png';
 import Vaca from '../../../assets/section2-projetos/pastejando-image.png';
 import Imovel from '../../../assets/section2-projetos/toni-neutzling-image.png';
 import Plantas from '../../../assets/section2-projetos/plante-saude-image.png';
+import Trator from "../../../assets/section2-projetos/trator-icon.svg";
 
 export function Section2() {
   return (
@@ -37,13 +38,15 @@ export function Section2() {
         {/* Card 3: Pastejando */}
         <div className="md:col-span-5">
             <FeaturedCardClassic
-            tag="Gestão Rural"
-            titulo="Pastejando"
-            descricao="Otimização de rotatividade de pasto para produtores de leite de médio porte."
-            imagem={Vaca}
-            />
-              
-        </div>  
+              titulo="Pastejando"
+              tag="Gestão Rural"
+              icone={Trator}
+              descricao="Otimização de rotatividade de pasto para produtores de leite de médio porte."
+              imagem={Vaca}
+              tecnologias={['Flutter', 'Firebase', 'IoT']}
+              />
+             
+        </div>
         
         {/* Card 4: Hut Admin */}
         <div className="md:col-span-7">
