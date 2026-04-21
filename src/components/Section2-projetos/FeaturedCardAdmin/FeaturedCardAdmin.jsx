@@ -1,3 +1,5 @@
+import "./FeaturedCardAdmin.css";
+
 export function FeaturedCardAdmin({ titulo, descricao, imagem }) {
   return (
     <div className="FeaturedCardAdmin">
