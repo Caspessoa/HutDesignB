@@ -17,9 +17,11 @@ export function Section2() {
         <div className="md:col-span-8">
           <FeaturedCardFull
             tag="Imobiliária"
+            tagsSecundarias={["React Native", "PostgreSQL"]}
             titulo="Toni Neutzling"
-            descricao="Redefinindo a experiência de busca por imóveis com filtros inteligentes."
+            descricao="Redefinindo a experiência de busca por imóveis com filtros inteligentes e tours virtuais de alta fidelidade."
             imagem={Imovel} 
+            metrica={{ valor: "+150%", label: "Leads Mensais" }}
             corSombra="rgba(14, 14, 18, 0.9)" 
           />
         </div>
