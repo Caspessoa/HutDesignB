@@ -1,6 +1,6 @@
-import { FeaturedCardFull } from "/src/components/Section2-projetos/FeaturedCardFull/FeaturedCardFull.jsx";
-import { FeaturedCardClassic } from "/src/components/Section2-projetos/FeaturedCardClassic/FeaturedCardClassic.jsx";
-import { FeaturedCardAdmin } from "/src/components/Section2-projetos/FeaturedCardAdmin/FeaturedCardAdmin.jsx";
+import { FeaturedCardFull } from "/src/components/Section2-projetos/FeaturedCardFull.jsx";
+import { FeaturedCardClassic } from "/src/components/Section2-projetos/FeaturedCardClassic.jsx";
+import { FeaturedCardAdmin } from "/src/components/Section2-projetos/FeaturedCardAdmin.jsx";
 import Computador from '../../../assets/section2-projetos/hut-admin-image.png';
 import Vaca from '../../../assets/section2-projetos/pastejando-image.png';
 import Imovel from '../../../assets/section2-projetos/toni-neutzling-image.png';
