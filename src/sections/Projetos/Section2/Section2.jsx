@@ -1,6 +1,7 @@
-import { FeaturedCardFull } from "/src/components/Section2-projetos/FeaturedCardFull.jsx";
-import { FeaturedCardClassic } from "/src/components/Section2-projetos/FeaturedCardClassic.jsx";
+import { FeaturedCardToni } from "/src/components/Section2-projetos/FeaturedCardToni.jsx";
+import { FeaturedCardPastejando} from "/src/components/Section2-projetos/FeaturedCardPastejando.jsx";
 import { FeaturedCardAdmin } from "/src/components/Section2-projetos/FeaturedCardAdmin.jsx";
+import { FeaturedCardPlante } from "../../../components/Section2-projetos/FeaturedCardPlante";
 import Computador from '../../../assets/section2-projetos/hut-admin-image.png';
 import Vaca from '../../../assets/section2-projetos/pastejando-image.png';
 import Imovel from '../../../assets/section2-projetos/toni-neutzling-image.png';
@@ -15,12 +16,13 @@ export function Section2() {
        
        {/* Card 1: Toni Neutzling */}
         <div className="md:col-span-8">
-          <FeaturedCardFull
+          <FeaturedCardToni
             tag="Imobiliária"
             tagsSecundarias={["React Native", "PostgreSQL"]}
             titulo="Toni Neutzling"
             descricao="Redefinindo a experiência de busca por imóveis com filtros inteligentes e tours virtuais de alta fidelidade."
             imagem={Imovel} 
+            icone={Trator}
             metrica={{ valor: "+150%", label: "Leads Mensais" }}
             corSombra="rgba(14, 14, 18, 0.9)" 
           />
@@ -28,10 +30,11 @@ export function Section2() {
 
         {/* Card 2: Plante Saúde */}
         <div className="md:col-span-4">
-          <FeaturedCardFull
+          <FeaturedCardPlante
             tag="Agrotech"
             titulo="Plante Saúde"
-            descricao="Monitoramento preditivo de safras através de análise foliar via IA.."
+            descricao="Monitoramento preditivo de safras através de análise foliar via IA."
+            metrica={"Aumento de 50% na eficiência"}
             imagem={Plantas} 
             corSombra="rgba(14, 14, 18, 0.9)" 
           />
@@ -39,7 +42,7 @@ export function Section2() {
       
         {/* Card 3: Pastejando */}
         <div className="md:col-span-5">
-            <FeaturedCardClassic
+            <FeaturedCardPastejando
               titulo="Pastejando"
               tag="Gestão Rural"
               icone={Trator}

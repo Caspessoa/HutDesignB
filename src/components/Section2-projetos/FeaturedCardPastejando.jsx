@@ -1,4 +1,4 @@
-export function FeaturedCardClassic({ titulo, descricao, imagem, tag, tecnologias, icone }) {
+export function FeaturedCardPastejando({ titulo, descricao, imagem, tag, tecnologias, icone }) {
   return (
     <div className="w-full h-[494px] bg-white rounded-[24px] flex flex-col overflow-hidden border border-[#B2B1BA33] shadow-[0px_4px_6px_-4px_rgba(0,0,0,0.1),0px_10px_15px_-3px_rgba(0,0,0,0.1)]">
       
@@ -28,9 +28,10 @@ export function FeaturedCardClassic({ titulo, descricao, imagem, tag, tecnologia
             <img 
               src={icone} 
               alt="ícone" 
-              className="w-[27.5px] h-[21.5px] brightness-0 invert-[31%] sepia-[87%] saturate-[1243%] hue-rotate-[243deg] contrast-[89%]" 
+              className="w-[32px] h-[32px] object-contain" 
             />
           )}
+      
         </div>
 
         <p className="max-w-[400px] font-['Inter'] text-[16px] leading-[26px] text-zinc-600 my-4">
