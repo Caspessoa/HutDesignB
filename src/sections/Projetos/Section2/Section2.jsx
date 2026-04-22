@@ -12,10 +12,10 @@ export function Section2() {
   return (
     <section className="w-full max-w-[1710px] mx-auto px-4 py-10">
 
-      <div className="container-cards grid grid-cols-1 md:grid-cols-12 gap-[32px]" >
+      <div className="flex flex-wrap gap-[32px] w-full">
        
        {/* Card 1: Toni Neutzling */}
-        <div className="md:col-span-8">
+        <div className="flex-[2] min-w-[min(100%,700px)]">
           <FeaturedCardToni
             tag="Imobiliária"
             tagsSecundarias={["React Native", "PostgreSQL"]}
@@ -29,7 +29,7 @@ export function Section2() {
         </div>
 
         {/* Card 2: Plante Saúde */}
-        <div className="md:col-span-4">
+        <div className="flex-1 min-w-[min(100%,480px)]">
           <FeaturedCardPlante
             tag="Agrotech"
             titulo="Plante Saúde"
@@ -41,7 +41,7 @@ export function Section2() {
         </div>
       
         {/* Card 3: Pastejando */}
-        <div className="md:col-span-5">
+        <div className="flex-1 min-w-[min(100%,480px)]">
             <FeaturedCardPastejando
               titulo="Pastejando"
               tag="Gestão Rural"
@@ -50,15 +50,14 @@ export function Section2() {
               imagem={Vaca}
               tecnologias={['Flutter', 'Firebase', 'IoT']}
               />
-             
         </div>
         
         {/* Card 4: Hut Admin */}
-        <div className="md:col-span-7">
+        <div className="flex-[1.5] min-w-[min(100%,600px)]">
           <FeaturedCardAdmin
-          titulo="Hut Admin"
-          descricao="Dashboard centralizado para gerenciamento de fluxo de caixa e RH corporativo."
-          imagem={Computador}
+            titulo="Hut Admin"
+            descricao="Dashboard centralizado para gerenciamento de fluxo de caixa e RH corporativo."
+            imagem={Computador}
           />
         </div>
       </div>    

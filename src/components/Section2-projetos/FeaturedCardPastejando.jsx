@@ -1,9 +1,9 @@
 export function FeaturedCardPastejando({ titulo, descricao, imagem, tag, tecnologias, icone }) {
   return (
-    <div className="w-full h-[494px] bg-white rounded-[24px] flex flex-col overflow-hidden border border-[#B2B1BA33] shadow-[0px_4px_6px_-4px_rgba(0,0,0,0.1),0px_10px_15px_-3px_rgba(0,0,0,0.1)]">
+    <div className="flex-1 min-w-[350px] h-[494px] bg-white rounded-[24px] flex flex-col overflow-hidden border border-[#B2B1BA33] shadow-[0px_4px_6px_-4px_rgba(0,0,0,0.1),0px_10px_15px_-3px_rgba(0,0,0,0.1)] transition-all duration-500 hover:scale-[1.01] transform-gpu">
       
-      {/* Wrapper da Imagem */}
-      <div className="w-full h-[256px] overflow-hidden rounded-t-[24px]">
+      {/* Wrapper da Imagem - Mantém a altura fixa para não achatar */}
+      <div className="w-full h-[256px] min-h-[256px] overflow-hidden">
         <img 
           src={imagem} 
           alt={titulo} 
@@ -11,10 +11,10 @@ export function FeaturedCardPastejando({ titulo, descricao, imagem, tag, tecnolo
         />
       </div>
 
-      {/* Conteúdo Branco */}
-      <div className="p-8 flex flex-col justify-between flex-grow">
+      {/* Conteúdo Branco - O flex-grow garante que ele ocupe o resto do card */}
+      <div className="p-8 flex flex-col justify-between flex-grow bg-white">
         
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-start">
           <div className="flex flex-col gap-1">
             <h2 className="font-['Plus_Jakarta_Sans'] font-bold text-2xl text-[#323239] leading-8 m-0">
               {titulo}
@@ -31,19 +31,19 @@ export function FeaturedCardPastejando({ titulo, descricao, imagem, tag, tecnolo
               className="w-[32px] h-[32px] object-contain" 
             />
           )}
-      
         </div>
 
+        {/* Descrição com a quebra controlada que você gosta */}
         <p className="max-w-[400px] font-['Inter'] text-[16px] leading-[26px] text-zinc-600 my-4">
           {descricao}
         </p>
 
         {/* Linha de Tecnologias */}
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           {tecnologias && tecnologias.map((tech) => (
             <span 
               key={tech} 
-              className="font-['Inter'] font-medium text-[12px] text-[#5F5E67] bg-zinc-100 px-3 py-1 rounded-lg"
+              className="font-['Inter'] font-medium text-[12px] text-[#5F5E67] bg-zinc-100 px-3 py-1 rounded-lg whitespace-nowrap"
             >
               {tech}
             </span>

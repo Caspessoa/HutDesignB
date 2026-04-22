@@ -2,7 +2,6 @@ export function FeaturedCardAdmin({ titulo, descricao, imagem }) {
   return (
     <div className="flex w-full max-w-[984.17px] h-[494px] bg-white rounded-[24px] overflow-hidden border border-[#B2B1BA33] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)]">
       
-      {/* Lado Esquerdo: Imagem (50%) */}
       <div className="w-1/2 bg-[#F4F4F5] flex items-center justify-center">
         <img 
           src={imagem} 
@@ -11,7 +10,6 @@ export function FeaturedCardAdmin({ titulo, descricao, imagem }) {
         />
       </div>
 
-      {/* Lado Direito: Texto (50%) */}
       <div className="w-1/2 p-8 flex flex-col justify-center gap-4">
         <div>
           <h2 className="font-['Plus_Jakarta_Sans'] font-bold text-[20px] text-[#18181B] mb-2">
