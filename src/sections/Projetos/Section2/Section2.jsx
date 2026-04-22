@@ -11,11 +11,11 @@ import Trator from "../../../assets/section2-projetos/trator-icon.svg";
 export function Section2() {
   return (
     <section className="w-full max-w-[1710px] mx-auto px-4 py-10">
-
       <div className="flex flex-wrap gap-[32px] w-full">
        
-       {/* Card 1: Toni Neutzling */}
-        <div className="flex-[2] min-w-[min(100%,700px)]">
+        {/* FILA 1: Toni (8/12) e Plante (4/12) */}
+        {/* Toni Neutzling: Antigo col-span-8 */}
+        <div className="flex-[8] min-w-[min(100%,700px)]">
           <FeaturedCardToni
             tag="Imobiliária"
             tagsSecundarias={["React Native", "PostgreSQL"]}
@@ -28,8 +28,8 @@ export function Section2() {
           />
         </div>
 
-        {/* Card 2: Plante Saúde */}
-        <div className="flex-1 min-w-[min(100%,480px)]">
+        {/* Plante Saúde: Antigo col-span-4 */}
+        <div className="flex-[4] min-w-[min(100%,450px)]">
           <FeaturedCardPlante
             tag="Agrotech"
             titulo="Plante Saúde"
@@ -40,8 +40,9 @@ export function Section2() {
           />
         </div>
       
-        {/* Card 3: Pastejando */}
-        <div className="flex-1 min-w-[min(100%,480px)]">
+        {/* FILA 2: Pastejando (5/12) e Hut Admin (7/12) */}
+        {/* Pastejando: Antigo col-span-5 */}
+        <div className="flex-[5] min-w-[min(100%,480px)]">
             <FeaturedCardPastejando
               titulo="Pastejando"
               tag="Gestão Rural"
@@ -52,14 +53,15 @@ export function Section2() {
               />
         </div>
         
-        {/* Card 4: Hut Admin */}
-        <div className="flex-[1.5] min-w-[min(100%,600px)]">
+        {/* Hut Admin: Antigo col-span-7 */}
+        <div className="flex-[7] min-w-[min(100%,600px)]">
           <FeaturedCardAdmin
             titulo="Hut Admin"
             descricao="Dashboard centralizado para gerenciamento de fluxo de caixa e RH corporativo."
             imagem={Computador}
           />
         </div>
+
       </div>    
     </section>
   );
