@@ -3,7 +3,7 @@ import monitorIcon from '../../../assets/section3-icons/monitor-icon.svg';
 import codeIcon from '../../../assets/section3-icons/code-icon.svg';
 import smartphoneIcon from '../../../assets/section3-icons/smartphone-icon.svg';
 
-export function Section3() {
+function Section3() {
   return (
     <section className="py-16 bg-[#FFFFFF]">
 
@@ -59,3 +59,4 @@ export function Section3() {
     </section>
   );
 }
+export default Section3;

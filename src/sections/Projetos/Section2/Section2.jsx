@@ -8,7 +8,7 @@ import Imovel from '../../../assets/section2-projetos/toni-neutzling-image.png';
 import Plantas from '../../../assets/section2-projetos/plante-saude-image.png';
 import Trator from "../../../assets/section2-projetos/trator-icon.svg";
 
-export function Section2() {
+function Section2() {
   return (
     <section className="w-full max-w-[1710px] mx-auto px-4 py-10">
       <div className="flex flex-wrap gap-[32px] w-full">
@@ -66,3 +66,4 @@ export function Section2() {
     </section>
   );
 }
+export default Section2;

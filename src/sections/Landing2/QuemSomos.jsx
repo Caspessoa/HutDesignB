@@ -5,7 +5,7 @@ import { IoSchoolSharp } from "react-icons/io5";
 import { IoCheckmarkCircle } from "react-icons/io5";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
 
-export function QuemSomos() {
+function QuemSomos() {
   return (
         <section className="w-full py-20 pt-20 pb-20 bg-[#F9FAFB]">
             <div className="max-w-6xl mx-auto px-6 lg:px-8 flex items-center gap-6">
@@ -55,3 +55,4 @@ export function QuemSomos() {
         </section>
  );
 }
+export default QuemSomos;
