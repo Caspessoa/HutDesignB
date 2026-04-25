@@ -43,7 +43,7 @@ export function FeaturedCardPlante({ titulo, descricao, imagem, tag, metrica }) 
           <span className="text-[#CAFF6F] font-bold text-[16px] leading-[24px] font-['Inter']">
             {metrica}
           </span>
-          <div className="w-[40px] h-[40px] bg-[#D4FF37] rounded-full flex items-center justify-center shadow-lg transition-transform group-hover:rotate-45">
+          <div className="w-[40px] h-[40px] bg-[#D4FF37] rounded-full flex items-center justify-center shadow-lg transition-transform hover:rotate-45">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#344E00" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
               <line x1="7" y1="17" x2="17" y2="7"></line>
               <polyline points="7 7 17 7 17 17"></polyline>

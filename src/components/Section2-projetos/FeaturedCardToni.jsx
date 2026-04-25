@@ -25,7 +25,7 @@ export function FeaturedCardToni({ titulo, descricao, imagem, tag, tagsSecundari
           )}
 
           {tagsSecundarias.map((t, index) => (
-            <span key={index} className="bg-white/10 backdrop-blur-[12px] text-white text-[11px] font-[500] px-3 py-1 h-[24px] flex items-center justify-center rounded-full border border-white/10 whitespace-nowrap">
+            <span key={index} className="bg-white/10 text-white text-[11px] font-[500] px-3 py-1 h-[24px] flex items-center justify-center rounded-full border border-white/10 whitespace-nowrap">
               {t}
             </span>
           ))}
@@ -44,7 +44,7 @@ export function FeaturedCardToni({ titulo, descricao, imagem, tag, tagsSecundari
         {/* Rodapé */}
         <div className="flex justify-between items-end w-full">
           {metrica ? (
-            <div className="bg-[#CAFF6F33] border border-[#CAFF6F4D] backdrop-blur-[12px] rounded-[16px] px-4 py-2 flex flex-col justify-center min-h-[55px]">
+            <div className="bg-[#CAFF6F33] border border-[#CAFF6F4D] rounded-[16px] px-4 py-2 flex flex-col justify-center min-h-[55px]">
               <span className="text-[#CAFF6F] font-[700] text-[18px] leading-[22.5px] font-['Inter']">
                 {metrica.valor}
               </span>
@@ -54,10 +54,10 @@ export function FeaturedCardToni({ titulo, descricao, imagem, tag, tagsSecundari
             </div>
           ) : <div />}
 
-          <a href="#caso" className="text-[#CAFF6F] font-[600] flex items-center gap-[10px] whitespace-nowrap group">
-            <span className="border-b border-trnsparent group-hover:border-[#CAFF6F] transition-all">Ver Caso</span>
-            <span className="text-xl transition-transform group-hover:translate-x-1">→</span>
-          </a>
+            <a href="#caso" className="group/link text-[#CAFF6F] font-[600] flex items-center gap-[10px] whitespace-nowrap">
+              <span className="border-b border-transparent group-hover/link:border-[#CAFF6F] transition-all duration-300">Ver Caso</span>
+              <span className="text-xl transition-transform group-hover/link:translate-x-1">→</span>
+            </a>
         </div>
       </div>
     </div>
