@@ -23,7 +23,7 @@ export function FeaturedCardPlante({ titulo, descricao, imagem, tag, metrica }) 
         
         {/* Tag */}
         {tag && (
-          <span className="bg-[#D4FF37] text-[#344E00] text-[12px] font-bold h-[24px] px-[12px] flex items-center justify-center rounded-full uppercase font-['Inter'] w-fit">
+          <span className="bg-[#D4FF37] text-[#344E00] text-[12px] font-bold h-[24px] px-[12px] flex items-center justify-center rounded-full uppercase font-['Inter'] w-fit shrink-0 border-none antialiased whitespace-nowrap backface-hidden">
             {tag}
           </span>
         )}

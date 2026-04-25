@@ -19,7 +19,7 @@ export function FeaturedCardToni({ titulo, descricao, imagem, tag, tagsSecundari
         {/* Tags */}
         <div className="flex flex-wrap gap-2 items-center">
           {tag && (
-            <span className="bg-[#D4FF37] text-[#344E00] text-[12px] font-[800] px-3 py-1 h-[24px] flex items-center justify-center rounded-full uppercase leading-[16px]">
+            <span className="bg-[#D4FF37] text-[#344E00] text-[12px] font-[800] px-3 h-[24px] inline-flex items-center justify-center rounded-full uppercase tracking-wider">
               {tag}
             </span>
           )}
