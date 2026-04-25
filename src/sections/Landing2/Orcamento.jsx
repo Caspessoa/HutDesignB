@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Orcamento(){
+function Orcamento(){
     return (
         <section className="w-full py-20 pt-40 pb-30 bg-[#F9FAFB]">
             <div className="max-w-5xl mx-auto px-6 lg:px-8 rounded-xl flex items-center gap-10 bg-[#6B0F9C] h-54">
@@ -15,3 +15,4 @@ export function Orcamento(){
         </section>
     )
 }
+export default Orcamento;

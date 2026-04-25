@@ -1,4 +1,4 @@
-export default function Hero() {
+function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#F9FAFB] py-20 px-6">
       
@@ -70,3 +70,4 @@ export default function Hero() {
     </section>
   );
 }
+export default Hero;
