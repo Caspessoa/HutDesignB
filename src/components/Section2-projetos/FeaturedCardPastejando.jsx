@@ -1,6 +1,8 @@
-export function FeaturedCardPastejando({ titulo, descricao, imagem, tag, tecnologias, icone }) {
+export function FeaturedCardPastejando({ titulo, descricao, imagem, tag, tecnologias, icone}) {
   return (
-    <div className="flex-1 min-w-[350px] h-[494px] bg-white rounded-[24px] flex flex-col overflow-hidden border border-[#B2B1BA33] shadow-[0px_4px_6px_-4px_rgba(0,0,0,0.1),0px_10px_15px_-3px_rgba(0,0,0,0.1)] transition-all duration-500 hover:scale-[1.01] transform-gpu">
+    <a
+    href = "#contato" 
+    className="flex-1 min-w-[350px] h-[494px] bg-white rounded-[24px] flex flex-col overflow-hidden border border-[#B2B1BA33] shadow-[0px_4px_6px_-4px_rgba(0,0,0,0.1),0px_10px_15px_-3px_rgba(0,0,0,0.1)] transition-all duration-500 hover:scale-[1.01] transform-gpu">
       
       {/* Wrapper da Imagem - Mantém a altura fixa para não achatar */}
       <div className="w-full h-[256px] min-h-[256px] overflow-hidden">
@@ -50,6 +52,6 @@ export function FeaturedCardPastejando({ titulo, descricao, imagem, tag, tecnolo
           ))}
         </div>
       </div>
-    </div>
+    </a>
   );
 }
