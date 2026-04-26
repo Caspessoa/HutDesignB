@@ -5,8 +5,8 @@ function Hero() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-10 items-center">
 
         {/* BOLAS DESFOCADAS NO BACKGROUND */}
-        <div class="absolute -top-10 -right-10 h-72 w-72 rounded-full bg-[#6B0F9C] opacity-20 blur-3xl"></div>
-        <div class="absolute -bottom-10 -left-10 h-72 w-72 rounded-full bg-[#A4DE02] opacity-20 blur-3xl"></div>
+        <div className="absolute -top-10 -right-10 h-72 w-72 rounded-full bg-[#6B0F9C] opacity-20 blur-3xl"></div>
+        <div className="absolute -bottom-10 -left-10 h-72 w-72 rounded-full bg-[#A4DE02] opacity-20 blur-3xl"></div>
 
         {/* LADO ESQUERDO: HEADER, DESCRIÇÃO E BOTÕES */}
         <div className="flex-1">
@@ -42,11 +42,11 @@ function Hero() {
         <div className="relative w-full max-w-[582px] aspect-square flex-shrink-1">
 
           {/* BOLAS DESFOCADAS ATRÁS DA IMAGEM */}
-          <div class="absolute -top-10 -right-10 h-32 w-32 rounded-full bg-[#A4DE02] opacity-25 blur-md"></div>
-          <div class="absolute -bottom-10 -left-10 h-32 w-32 rounded-full bg-[#6B0F9C] opacity-25 blur-md"></div>
+          <div className="absolute -top-10 -right-10 h-32 w-32 rounded-full bg-[#A4DE02] opacity-25 blur-md"></div>
+          <div className="absolute -bottom-10 -left-10 h-32 w-32 rounded-full bg-[#6B0F9C] opacity-25 blur-md"></div>
           
           <img
-            src="./src/assets/estudantes.png"
+            src="/src/assets/estudantes.png"
             alt="Equipe"
             className="relative w-full h-full object-cover rounded-lg shadow-lg"
           />

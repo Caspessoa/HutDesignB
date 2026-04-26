@@ -3,13 +3,13 @@ import { useState } from "react";
 import Header from "./components/Header.jsx";
 import Hero from "./sections/Landing2/Hero.jsx"
 import Historia from "./sections/Landing2/Historia.jsx";
-import { QuemSomos } from "./sections/Landing2/QuemSomos.jsx";
-import { Orcamento } from "./sections/Landing2/Orcamento.jsx";
+import QuemSomos from "./sections/Landing2/QuemSomos.jsx";
+import Orcamento from "./sections/Landing2/Orcamento.jsx";
 import Footer from "./components/Footer.jsx";
 import Section3 from './sections/Landing2/Section3/Section3';
 import Section1 from './sections/Projetos/Section1.jsx';
-import CTASection from "./sections/Projetos/CTASection.jsx";
 import Section2 from "./sections/Projetos/Section2/Section2.jsx";
+import CTASection from "./sections/Projetos/CTASection.jsx";
 
 
 function App() {
@@ -39,9 +39,8 @@ function App() {
         {secaoAtiva === "projetos" && (
           <>
           <Section1 /> {/* section1 da landing projetos */}
-          {/* <Historia /> */}
-          <CTASection />
           <Section2 />
+          <CTASection />
           </>
         )}
         {secaoAtiva === "servicos" && (
