@@ -2,13 +2,16 @@ import React, { useState } from 'react';
 import whatsAppIcon from '../assets/whatsAppIcon.svg';
 
 const WhatsAppButton = () => {
+
+  // Controle de estado para abrir/fechar o formulário e expandir o botão
   const [showForm, setShowForm] = useState(false);
 
+  // Impede o navegador de recarregar a página
   const handleFormSubmit = (e) => {
   e.preventDefault();
   const formData = new FormData(e.target);
   
-  // Pegando cada campo pelo 'name' do input
+  // Captura dos dados pelo 'name' do input
   const nome = formData.get('nomeUsuario');
   const empresa = formData.get('nomeEmpresa');
   const motivo = formData.get('motivoContato');
@@ -23,10 +26,11 @@ const WhatsAppButton = () => {
     `*Motivo do Contato:* ${motivo}%0A` +
     `*Mensagem:* ${mensagem}`;
 
-  const urlFinal = `https://wa.me/5553999440039?text=${mensagemPronta}`;
+  // Redireciona para a API do WhatsApp com o esqueleto da mensagem pronto (Numero genérico não funcional, quando for utilizar necessario mudar)
+  const urlFinal = `https://wa.me/5553999999?text=${mensagemPronta}`;
   
-  window.open(urlFinal, '_blank');
-  setShowForm(false);
+  window.open(urlFinal, '_blank'); 
+  setShowForm(false); // Fecha o formulário
 };
 
   return (
@@ -40,7 +44,7 @@ const WhatsAppButton = () => {
 
       <div className="fixed right-4 top-1/2 -translate-y-1/2 z-[200]">
         
-        {/* BOTÃO PRINCIPAL */}
+        {/* BOTÃO PRINCIPAL - Apenas com a função de abrir o formulario para o usuário */}
         <button
           onClick={() => setShowForm(!showForm)}
           className={`h-14 bg-[#25D366] rounded-full shadow-2xl flex items-center 
@@ -58,6 +62,7 @@ const WhatsAppButton = () => {
           </span>
         </button>
 
+        {/* Formulário - (quando aberto por meio do botão executa essa estrutura) */}
         {showForm && (
           <div className="absolute top-full mt-4 right-0 bg-white w-80 rounded-2xl shadow-2xl p-6 
                           animate-in fade-in zoom-in slide-in-from-top-2 duration-300 origin-top-right">
