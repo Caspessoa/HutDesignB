@@ -27,7 +27,7 @@ const WhatsAppButton = () => {
     `*Mensagem:* ${mensagem}`;
 
   // Redireciona para a API do WhatsApp com o esqueleto da mensagem pronto (Numero genérico não funcional, quando for utilizar necessario mudar)
-  const urlFinal = `https://wa.me/5553999999?text=${mensagemPronta}`;
+  const urlFinal = `https://wa.me/55539999999?text=${mensagemPronta}`;
   
   window.open(urlFinal, '_blank'); 
   setShowForm(false); // Fecha o formulário
@@ -64,9 +64,9 @@ const WhatsAppButton = () => {
 
         {/* Formulário - (quando aberto por meio do botão executa essa estrutura) */}
         {showForm && (
-          <div className="absolute top-full mt-4 right-0 bg-white w-80 rounded-2xl shadow-2xl p-6 
-                          animate-in fade-in zoom-in slide-in-from-top-2 duration-300 origin-top-right">
-            <h3 className="font-bold text-gray-800 mb-4">Hut8</h3>
+          <div className="absolute top-full mt-4 right-0 bg-white w-80 [@media(max-height:700px)]:w-[600px] rounded-2xl shadow-2xl p-6 max-h-[42vh] overflow-y-auto  scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent animate-in fade-in zoom-in slide-in-from-top-2 duration-300 origin-top-right z-[210]">
+
+            <h3 className="font-bold text-gray-800 mb-4">Contato  Hut8</h3>
             <form onSubmit={handleFormSubmit} className="flex flex-col gap-3">
               <input 
                 name="nomeUsuario"
