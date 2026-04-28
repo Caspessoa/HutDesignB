@@ -13,7 +13,7 @@ const WhatsAppButton = () => {
   
   // Captura dos dados pelo 'name' do input
   const nome = formData.get('nomeUsuario');
-  const empresa = formData.get('nomeEmpresa');
+  const empresa = formData.get('nomeEmpresa') || 'Não informada';
   const motivo = formData.get('motivoContato');
   const email = formData.get('email');
   const mensagem = formData.get('mensagem');
