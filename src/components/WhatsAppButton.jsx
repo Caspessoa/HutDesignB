@@ -52,6 +52,23 @@ const WhatsAppButton = () => {
                 placeholder="Seu Nome"
                 className="w-full p-3 bg-gray-50 border border-gray-100 rounded-xl outline-none focus:ring-2 focus:ring-[#25D366] text-black"
               />
+              <input 
+                name="nomeEmpresa"
+                placeholder="Sua empresa"
+                className="w-full p-3 bg-gray-50 border border-gray-100 rounded-xl outline-none focus:ring-2 focus:ring-[#25D366] text-black"
+              />
+              <input 
+                name="motivoContato"
+                required
+                placeholder="Motivo do contato"
+                className="w-full p-3 bg-gray-50 border border-gray-100 rounded-xl outline-none focus:ring-2 focus:ring-[#25D366] text-black"
+              />
+              <input 
+                name="email"
+                required
+                placeholder="email"
+                className="w-full p-3 bg-gray-50 border border-gray-100 rounded-xl outline-none focus:ring-2 focus:ring-[#25D366] text-black"
+              />
               <textarea 
                 name="mensagem"
                 required
