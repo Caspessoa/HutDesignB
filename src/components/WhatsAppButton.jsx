@@ -5,12 +5,29 @@ const WhatsAppButton = () => {
   const [showForm, setShowForm] = useState(false);
 
   const handleFormSubmit = (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-    const link = `https://wa.me/5553999999999?text=Nome: ${formData.get('nome')}`;
-    window.open(link, '_blank');
-    setShowForm(false);
-  };
+  e.preventDefault();
+  const formData = new FormData(e.target);
+  
+  // Pegando cada campo pelo 'name' do input
+  const nome = formData.get('nomeUsuario');
+  const empresa = formData.get('nomeEmpresa');
+  const motivo = formData.get('motivoContato');
+  const email = formData.get('email');
+  const mensagem = formData.get('mensagem');
+
+  // Esqueleto da mensagem (O %0A é a quebra de linha)
+  const mensagemPronta = 
+    `*Nome:* ${nome}%0A` +
+    `*Empresa:* ${empresa}%0A` +
+    `*E-mail:* ${email}%0A%0A`+
+    `*Motivo do Contato:* ${motivo}%0A` +
+    `*Mensagem:* ${mensagem}`;
+
+  const urlFinal = `https://wa.me/5553999440039?text=${mensagemPronta}`;
+  
+  window.open(urlFinal, '_blank');
+  setShowForm(false);
+};
 
   return (
     <>
@@ -47,7 +64,7 @@ const WhatsAppButton = () => {
             <h3 className="font-bold text-gray-800 mb-4">Hut8</h3>
             <form onSubmit={handleFormSubmit} className="flex flex-col gap-3">
               <input 
-                name="nome"
+                name="nomeUsuario"
                 required
                 placeholder="Seu Nome"
                 className="w-full p-3 bg-gray-50 border border-gray-100 rounded-xl outline-none focus:ring-2 focus:ring-[#25D366] text-black"
@@ -65,8 +82,9 @@ const WhatsAppButton = () => {
               />
               <input 
                 name="email"
+                type="email"
                 required
-                placeholder="email"
+                placeholder="e-mail"
                 className="w-full p-3 bg-gray-50 border border-gray-100 rounded-xl outline-none focus:ring-2 focus:ring-[#25D366] text-black"
               />
               <textarea 
