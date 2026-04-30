@@ -59,7 +59,7 @@ function Hero() {
             </div>
 
             <code className="text-sm text-[#4B5563]">
-              <span className="text-[#6B0F9C]">const </span>hut = {"{"} <br />
+              <span className="text-[#6B0F9C]">const </span>hut8 = {"{"} <br />
               &nbsp;&nbsp;founded: <span className="text-[#A4DE02]">2014</span>, <br />
               &nbsp;&nbsp;mission: <span className="text-[#A4DE02]">"Innovate"</span> <br />
               {"}"};
