@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Header from "./components/Header.jsx";
+import WhatsAppButton from "./components/WhatsAppButton.jsx";
 import Hero from "./sections/Landing2/Hero.jsx"
 import Historia from "./sections/Landing2/Historia.jsx";
 import QuemSomos from "./sections/Landing2/QuemSomos.jsx";
@@ -29,6 +30,7 @@ function App() {
         {secaoAtiva === "home" && (
           <>
           <Hero />
+          <WhatsAppButton />
           <Historia />
           <QuemSomos />
           <Section3 />
@@ -38,6 +40,7 @@ function App() {
 
         {secaoAtiva === "projetos" && (
           <>
+          <WhatsAppButton />
           <Section1 /> {/* section1 da landing projetos */}
           <Section2 />
           <CTASection />
@@ -46,6 +49,7 @@ function App() {
         {secaoAtiva === "servicos" && (
           <>
           <Hero />
+          <WhatsAppButton />
           <Historia />
           <QuemSomos />
           <Section3 />
@@ -55,6 +59,7 @@ function App() {
         {secaoAtiva === "equipe" && (
           <>
           <Hero />
+          <WhatsAppButton />
           <Historia />
           <QuemSomos />
           <Section3 />
@@ -64,6 +69,7 @@ function App() {
         {secaoAtiva === "contato" && (
           <>
           <Hero />
+          <WhatsAppButton />
           <Historia />
           <QuemSomos />
           <Section3 />
