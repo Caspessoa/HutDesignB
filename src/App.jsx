@@ -12,6 +12,7 @@ import CTASection from './sections/Projetos/CTASection.jsx';
 import Section2 from "./sections/Projetos/Section2/Section2.jsx";
 import EquipeSection1 from './sections/Equipe/EquipeSection1.jsx';
 import EquipeSection2 from './sections/Equipe/EquipeSection2.jsx';
+import EquipeSection3 from './sections/Equipe/EquipeSection3.jsx';
 import Bg1 from "./components/Backgrounds/Bg1.jsx";
 import Bg2 from "./components/Backgrounds/Bg2.jsx";
 
@@ -59,10 +60,7 @@ function App() {
           <Bg2>
             <EquipeSection1 />
             <EquipeSection2 />
-            {/* <Historia />
-            <QuemSomos />
-            <Section3 />
-            <Orcamento /> */}
+            <EquipeSection3 />
           </Bg2>
           </>
         )}
