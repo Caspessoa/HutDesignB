@@ -1,4 +1,8 @@
 import ServicosCard from '../../components/ComponentesServicos/ServicosCard';
+import WebImagem from '../../assets/LandingServiços/plataformaWeb.png'
+import MobileImagem from '../../assets/LandingServiços/aplicativoMobile.png'
+import personalizadaImagem from '../../assets/LandingServiços/solucoesPersonalizadas.png'
+
 
 const PaginaServicos = () => {
 
@@ -6,10 +10,12 @@ const PaginaServicos = () => {
     {
       title: "Plataformas Web",
       description: "Criamos sites e sistemas web rápidos, modernos e preparados para gerar resultados reais.",
-
+      imageUrl: WebImagem,
+      
       topics: [
         {
           title: "Problemas que resolvemos",
+         
           items: [
             "Sites lentos e desatualizados",
             "Baixa conversão",
@@ -46,6 +52,7 @@ const PaginaServicos = () => {
 
     {
       title: "Aplicativos Mobile",
+      imageUrl: MobileImagem,
       description: "Desenvolvemos aplicativos modernos para Android e iOS com foco em performance e experiência do usuário.",
 
       topics: [
@@ -87,6 +94,7 @@ const PaginaServicos = () => {
 
     {
       title: "Soluções Personalizadas",
+      imageUrl: personalizadaImagem,
       description: "Criamos sistemas sob medida para resolver problemas específicos e otimizar processos do seu negócio.",
 
       topics: [
@@ -141,12 +149,13 @@ const PaginaServicos = () => {
             title={service.title}
             description={service.description}
             topics={service.topics}
+            imageUrl={service.imageUrl}
           />
         ))}
       </div>
 
     </section>
-  );
+  );    
 };
 
 export default PaginaServicos;
