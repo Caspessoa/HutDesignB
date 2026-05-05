@@ -14,6 +14,7 @@ import EquipeSection1 from './sections/Equipe/EquipeSection1.jsx';
 import EquipeSection2 from './sections/Equipe/EquipeSection2.jsx';
 import Bg1 from "./components/Backgrounds/Bg1.jsx";
 import Bg2 from "./components/Backgrounds/Bg2.jsx";
+import CardServicos from './sections/Servicos/ServicePages.jsx'
 
 function App() {
   // página inicial padrão
@@ -49,7 +50,7 @@ function App() {
           <>
           <Hero />
           <Historia />
-          <QuemSomos />
+          <CardServicos/>
           <Section3 />
           <Orcamento />
           </>
