@@ -1,33 +1,39 @@
-
-
-
-const ServicosCard = ({ title, description, imageUrl, imageAlt, reverse = false }) => {
+const ServicosCard = ({ title, description, topics }) => {
   return (
-    <div className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden mb-8`}>
-      
-      {/* Lado do Conteúdo (Texto) */}
-      <div className="w-full md:w-1/2 p-8 flex flex-col justify-center">
-        <h3 className="text-2xl font-bold text-gray-900 mb-4">
-          {title}
-        </h3>
-        <p className="text-gray-600 leading-relaxed">
-          {description}
-        </p>
+    <div className="bg-white rounded-2xl shadow-md p-8 hover:shadow-lg transition">
+
+      {/* Título */}
+      <h3 className="text-2xl font-bold mb-3 text-gray-800">
+        {title}
+      </h3>
+
+      {/* Descrição curta */}
+      <p className="text-gray-600 mb-6">
+        {description}
+      </p>
+
+      {/* Tópicos */}
+      <div className="grid md:grid-cols-2 gap-6">
+        {topics?.map((topic, index) => (
+          <div key={index}>
+
+            <h4 className="font-semibold text-gray-800 mb-2">
+              {topic.title}
+            </h4>
+
+            <ul className="space-y-1 text-gray-600 text-sm">
+              {topic.items.map((item, i) => (
+                <li key={i} className="flex items-start gap-2">
+                  <span className="text-purple-600">•</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+          </div>
+        ))}
       </div>
 
-      {/* Lado da Imagem */}
-      <div className="w-full md:w-1/2 h-64 md:h-96 bg-gray-100 flex items-center justify-center border-l border-gray-200">
-        {imageUrl ? (
-          <img 
-            src={imageUrl} 
-            alt={imageAlt} 
-            className="w-full h-full object-cover"
-          />
-        ) : (
-          <span className="text-gray-400">Espaço para Imagem</span>
-        )}
-      </div>
-      
     </div>
   );
 };
