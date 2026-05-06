@@ -1,7 +1,7 @@
 export const ServicosCard = ({ id, title, description, topics, imageUrl, imageAlt}) => {
   return (
     <div id={id} className=
-      "bg-white rounded-2xl shadow-md p-8 hover:shadow-lg transition flex flex-col lg:flex-row gap-10 items-center scroll-mt-28">
+      "bg-white rounded-2xl shadow-md p-8 w-full hover:shadow-lg transition flex flex-col lg:flex-row gap-10 items-center scroll-mt-28">
       
       {/* Coluna do Conteúdo */}
       <div className="flex-1">
@@ -13,7 +13,7 @@ export const ServicosCard = ({ id, title, description, topics, imageUrl, imageAl
           {description}
         </p>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-8 text-center sm:text-left">
           {topics?.map((topic, index) => (
             <div key={index}>
               <h4 className="font-semibold text-gray-800 mb-2">

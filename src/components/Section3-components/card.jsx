@@ -1,7 +1,6 @@
 import React from 'react';
 import './card.css';
 
-// Adicionamos a prop 'linkDestino'
 export function Card({ icone, titulo, descricao, corFundoIcone, aoClicar}) {
   return (
     <div className="estilo-cards">
