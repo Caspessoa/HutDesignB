@@ -2,3 +2,7 @@
 
 /* Importa os estilos específicos da section3 Landing2 (cards) */
 @import "./sections/Landing2/Section3/Section3.css";
+
+body, html {
+  overflow-x: hidden;
+}

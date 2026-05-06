@@ -1,12 +1,7 @@
 export default function Section1() {
   return (
-    <section className="relative overflow-hidden bg-[#F9FAFB] py-20 px-6">
-      
+    <section className="relative overflow-hidden bg-transparent py-20 px-6">      
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 items-center">
-
-        {/* BOLAS DESFOCADAS NO BACKGROUND */}
-        <div class="absolute -top-10 -right-10 h-72 w-72 rounded-full bg-[#6B0F9C] opacity-20 blur-3xl"></div>
-        <div class="absolute -bottom-10 -left-10 h-72 w-72 rounded-full bg-[#A4DE02] opacity-20 blur-3xl"></div>
 
         {/* LADO ESQUERDO: HEADER, DESCRIÇÃO E BOTÕES */}
         <div className="flex-1 w-full lg:w-1/2">
@@ -32,8 +27,8 @@ export default function Section1() {
         <div className="relative w-full lg:w-1/2 max-w-[504px] aspect-square">
 
           {/* BOLAS DESFOCADAS ATRÁS DA IMAGEM */}
-          <div class="absolute -top-10 -right-10 h-32 w-32 rounded-full bg-[#A4DE02] opacity-25 blur-md"></div>
-          <div class="absolute -bottom-10 -left-10 h-32 w-32 rounded-full bg-[#6B0F9C] opacity-25 blur-md"></div>
+          <div class="absolute -bottom-15 -left-30 h-40 w-40 rounded-full bg-[#A4DE02] opacity-25 blur-md"></div>
+          <div class="absolute -bottom-1 -top-1 -right-12 h-32 w-32 rounded-full bg-[#A4DE02] opacity-25 blur-md"></div>
           
           <img
             src="/src/assets/LandingProjetos/image1.png"
@@ -49,7 +44,7 @@ export default function Section1() {
             </div>
 
             <code className="text-sm text-[#4B5563]">
-              <span className="text-[#6B0F9C]">const </span>hut = {"{"} <br />
+              <span className="text-[#6B0F9C]">const </span>hut8 = {"{"} <br />
               &nbsp;&nbsp;founded: <span className="text-[#A4DE02]">2014</span>, <br />
               &nbsp;&nbsp;mission: <span className="text-[#A4DE02]">"Innovate"</span> <br />
               {"}"};
