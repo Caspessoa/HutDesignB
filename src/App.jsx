@@ -17,8 +17,8 @@ import EquipeSection2 from './sections/Equipe/EquipeSection2.jsx';
 import EquipeSection3 from './sections/Equipe/EquipeSection3.jsx';
 import Bg1 from "./components/Backgrounds/Bg1.jsx";
 import Bg2 from "./components/Backgrounds/Bg2.jsx";
+import HeroServicos from "./sections/Servicos/HeroServicos.jsx" 
 import CardServicos from './sections/Servicos/ServicePages.jsx'
-
 
 function App() {
   // página inicial padrão
@@ -58,9 +58,8 @@ function App() {
         )}
         {secaoAtiva === "servicos" && (
           <>
-          <Hero />
+          <HeroServicos/>
           <WhatsAppButton />
-          <Historia />
           <CardServicos/>
           <Orcamento />
           </>
