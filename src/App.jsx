@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { useNavegacao } from "./components/ComponentesServicos/useNavegacao.js";
 import Header from "./components/Header.jsx";
 import WhatsAppButton from "./components/WhatsAppButton.jsx";
 import Hero from "./sections/Landing2/Hero.jsx"
@@ -16,11 +17,15 @@ import EquipeSection2 from './sections/Equipe/EquipeSection2.jsx';
 import EquipeSection3 from './sections/Equipe/EquipeSection3.jsx';
 import Bg1 from "./components/Backgrounds/Bg1.jsx";
 import Bg2 from "./components/Backgrounds/Bg2.jsx";
+import CardServicos from './sections/Servicos/ServicePages.jsx'
+
 
 function App() {
   // página inicial padrão
   const [secaoAtiva, setSecaoAtiva] = useState("home");
   
+  const { navegarParaServico } = useNavegacao(setSecaoAtiva);
+
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       
@@ -36,7 +41,7 @@ function App() {
           <WhatsAppButton />
           <Historia />
           <QuemSomos />
-          <Section3 />
+          <Section3 navegarParaServico={navegarParaServico} />
           <Orcamento />
           </>
         )}
@@ -56,8 +61,7 @@ function App() {
           <Hero />
           <WhatsAppButton />
           <Historia />
-          <QuemSomos />
-          <Section3 />
+          <CardServicos/>
           <Orcamento />
           </>
         )}

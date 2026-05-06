@@ -1,7 +1,7 @@
 import React from 'react';
 import './card.css';
 
-export function Card({ icone, titulo, descricao, corFundoIcone }) {
+export function Card({ icone, titulo, descricao, corFundoIcone, aoClicar}) {
   return (
     <div className="estilo-cards">
       
@@ -15,10 +15,10 @@ export function Card({ icone, titulo, descricao, corFundoIcone }) {
         {descricao}
       </p>
 
-      <a href="#contato" className="link-saiba-mais">
+      <button onClick={aoClicar} className="link-saiba-mais">
         <span className="linha-animada">Saiba mais</span>
         <span className="seta">→</span>
-      </a>
+      </button>
     </div>
   );
 }
