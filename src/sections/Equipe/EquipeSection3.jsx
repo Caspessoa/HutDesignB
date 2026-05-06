@@ -60,36 +60,36 @@ const team = [
   },
 ];
 
-function TeamCard({ person }) {
+function Cards({ pessoa }) {
   return (
     <article className="group w-full rounded-md bg-white p-3 shadow-[0_8px_24px_rgba(25,25,50,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_32px_rgba(25,25,50,0.10)]">
       <div className="overflow-hidden rounded-sm bg-slate-100">
         <img
-          src={person.image}
-          alt={person.name}
+          src={pessoa.image}
+          alt={pessoa.name}
           className="h-32 w-full object-cover transition duration-300 group-hover:scale-105"
         />
       </div>
 
       <div className="pt-3">
         <h3 className="text-[11px] font-bold leading-tight text-slate-900">
-          {person.name}
+          {pessoa.name}
         </h3>
         <p className="mt-1 text-[8px] font-medium text-slate-400">
-          {person.role}
+          {pessoa.role}
         </p>
 
         <div className="mt-4 flex items-center gap-2">
           <a
             href="#"
-            aria-label={`GitHub de ${person.name}`}
+            aria-label={`GitHub de ${pessoa.name}`}
             className="grid h-5 w-5 place-items-center rounded-full bg-slate-100 text-slate-500 transition hover:bg-violet-100 hover:text-violet-700"
           >
             <FiGithub size={10} strokeWidth={2.2} />
           </a>
           <a
             href="#"
-            aria-label={`LinkedIn de ${person.name}`}
+            aria-label={`LinkedIn de ${pessoa.name}`}
             className="grid h-5 w-5 place-items-center rounded-full bg-slate-100 text-slate-500 transition hover:bg-violet-100 hover:text-violet-700"
           >
             <CiLinkedin size={10} strokeWidth={2.2} />
@@ -100,7 +100,7 @@ function TeamCard({ person }) {
   );
 }
 
-export default function DevelopersDesignersSection() {
+export default function DevsDesignersSection() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#f6f7f9] px-6 py-10 font-sans text-slate-900">
       <div className="pointer-events-none absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-lime-200/45 blur-3xl" />
@@ -117,8 +117,8 @@ export default function DevelopersDesignersSection() {
         </header>
 
         <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5 lg:gap-6">
-          {team.map((person, index) => (
-            <TeamCard key={`${person.name}-${index}`} person={person} />
+          {team.map((pessoa, index) => (
+            <Cards key={`${pessoa.name}-${index}`} pessoa={pessoa} />
           ))}
         </div>
       </section>
