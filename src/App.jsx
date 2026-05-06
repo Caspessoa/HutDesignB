@@ -19,6 +19,7 @@ import Bg1 from "./components/Backgrounds/Bg1.jsx";
 import Bg2 from "./components/Backgrounds/Bg2.jsx";
 import HeroServicos from "./sections/Servicos/HeroServicos.jsx" 
 import CardServicos from './sections/Servicos/ServicePages.jsx'
+import CTAServicos from "./sections/Servicos/CTAServicos.jsx";
 
 function App() {
   // página inicial padrão
@@ -61,7 +62,7 @@ function App() {
           <HeroServicos/>
           <WhatsAppButton />
           <CardServicos/>
-          <Orcamento />
+          <CTAServicos/>
           </>
         )}
         {secaoAtiva === "equipe" && (
