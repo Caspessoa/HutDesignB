@@ -1,0 +1,120 @@
+[1mdiff --git a/src/App.jsx b/src/App.jsx[m
+[1mindex c2f4340..3863a49 100644[m
+[1m--- a/src/App.jsx[m
+[1m+++ b/src/App.jsx[m
+[36m@@ -8,22 +8,72 @@[m [mimport Orcamento from "./sections/Landing2/Orcamento.jsx";[m
+ import Footer from "./components/Footer.jsx";[m
+ import Section3 from './sections/Landing2/Section3/Section3';[m
+ import Section1 from './sections/Projetos/Section1.jsx';[m
+[31m-import Section2 from "./sections/Projetos/Section2/Section2.jsx";[m
+[31m-import CTASection from "./sections/Projetos/CTASection.jsx";[m
+[31m-[m
+ [m
+ function App() {[m
+   // página inicial padrão[m
+   const [secaoAtiva, setSecaoAtiva] = useState("home");[m
+   [m
+   return ([m
+[31m-    <div className="container-section2 min-h-screen flex flex-col bg-gray-50">[m
+[32m+[m[32m    <div className="min-h-screen flex flex-col bg-gray-50">[m
+       [m
+       <Header setSecaoAtiva={setSecaoAtiva} />[m
+ [m
+       {/* Conteúdo principal */}[m
+       <div className="flex-grow">[m
+[32m+[m[32m        {/* renderiza apenas o bloco correspondente atual */}[m
+[32m+[m
+[32m+[m[32m        {secaoAtiva === "home" && ([m
+[32m+[m[32m          <>[m
+[32m+[m[32m          <Hero />[m
+[32m+[m[32m          <Historia />[m
+[32m+[m[32m          <QuemSomos />[m
+[32m+[m[32m          <Section3 />[m
+[32m+[m[32m          <Orcamento />[m
+[32m+[m[32m          </>[m
+[32m+[m[32m        )}[m
+[32m+[m
+[32m+[m[32m        {secaoAtiva === "projetos" && ([m
+[32m+[m[32m          <>[m
+[32m+[m[32m          <Section1 /> {/* section1 da landing projetos */}[m
+[32m+[m[32m          {/* <Historia /> */}[m
+[32m+[m[32m          </>[m
+[32m+[m[32m        )}[m
+[32m+[m[32m        {secaoAtiva === "servicos" && ([m
+[32m+[m[32m          <>[m
+[32m+[m[32m          <Hero />[m
+[32m+[m[32m          <Historia />[m
+[32m+[m[32m          <QuemSomos />[m
+[32m+[m[32m          <Section3 />[m
+[32m+[m[32m          <Orcamento />[m
+[32m+[m[32m          </>[m
+[32m+[m[32m        )}[m
+[32m+[m[32m        {secaoAtiva === "equipe" && ([m
+[32m+[m[32m          <>[m
+[32m+[m[32m          <Hero />[m
+[32m+[m[32m          <Historia />[m
+[32m+[m[32m          <QuemSomos />import React from "react";[m
+[32m+[m[32mimport { useState } from "react";[m
+[32m+[m[32mimport Header from "./components/Header.jsx";[m
+[32m+[m[32mimport WhatsAppButton from "./components/WhatsAppButton,jsx"[m
+[32m+[m[32mimport Hero from "./sections/Landing2/Hero.jsx"[m
+[32m+[m[32mimport Historia from "./sections/Landing2/Historia.jsx";[m
+[32m+[m[32mimport QuemSomos from "./sections/Landing2/QuemSomos.jsx";[m
+[32m+[m[32mimport Orcamento from "./sections/Landing2/Orcamento.jsx";[m
+[32m+[m[32mimport Footer from "./components/Footer.jsx";[m
+[32m+[m[32mimport Section3 from './sections/Landing2/Section3/Section3';[m
+[32m+[m[32mimport Section1 from './sections/Projetos/Section1.jsx';[m
+[32m+[m
+[32m+[m[32mfunction App() {[m
+[32m+[m[32m  // página inicial padrão[m
+[32m+[m[32m  const [secaoAtiva, setSecaoAtiva] = useState("home");[m
+[32m+[m[41m  [m
+[32m+[m[32m  return ([m
+[32m+[m[32m    <div className="min-h-screen flex flex-col bg-gray-50">[m
+[32m+[m[41m      [m
+[32m+[m[32m      <Header setSecaoAtiva={setSecaoAtiva} />[m
+ [m
+[32m+[m[32m      {/* Conteúdo principal */}[m
+[32m+[m[32m      <div className="flex-grow">[m
+         {/* renderiza apenas o bloco correspondente atual */}[m
+ [m
+         {secaoAtiva === "home" && ([m
+[36m@@ -39,8 +89,7 @@[m [mfunction App() {[m
+         {secaoAtiva === "projetos" && ([m
+           <>[m
+           <Section1 /> {/* section1 da landing projetos */}[m
+[31m-          <Section2 />[m
+[31m-          <CTASection />[m
+[32m+[m[32m          {/* <Historia /> */}[m
+           </>[m
+         )}[m
+         {secaoAtiva === "servicos" && ([m
+[36m@@ -79,4 +128,27 @@[m [mfunction App() {[m
+     </div>[m
+   );[m
+ }[m
+[32m+[m[32mexport default App;[m
+[32m+[m[32m          <Section3 />[m
+[32m+[m[32m          <Orcamento />[m
+[32m+[m[32m          </>[m
+[32m+[m[32m        )}[m
+[32m+[m[32m        {secaoAtiva === "contato" && ([m
+[32m+[m[32m          <>[m
+[32m+[m[32m          <Hero />[m
+[32m+[m[32m          <Historia />[m
+[32m+[m[32m          <QuemSomos />[m
+[32m+[m[32m          <Section3 />[m
+[32m+[m[32m          <Orcamento />[m
+[32m+[m[32m          </>[m
+[32m+[m[32m        )}[m
+[32m+[m[41m        [m
+[32m+[m[32m      </div>[m
+[32m+[m
+[32m+[m[32m      {/* Footer sempre no final */}[m
+[32m+[m[32m      <Footer />[m
+[32m+[m[41m      [m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  );[m
+[32m+[m[32m}[m
+ export default App;[m
+\ No newline at end of file[m
