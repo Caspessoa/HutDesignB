@@ -22,7 +22,7 @@ function HeroServicos() {
           </h1>
 
           <p className="text-[#4B5563] text-[20px] leading-[28px] mt-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum excepturi iusto aut quisquam ipsa, fuga facere, officia modi laudantium, earum qui esse illum. Similique odio voluptatem minus, numquam qui ipsam.
+           Criamos sites, sistemas, aplicativos e soluções personalizadas para ajudar empresas e projetos a resolver problemas reais com tecnologia, inovação e excelente custo-benefício.  
           </p>
         </div>
 
