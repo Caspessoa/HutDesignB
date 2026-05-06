@@ -1,4 +1,4 @@
-import ServicosCard from '../../components/ComponentesServicos/ServicosCard';
+import { ServicosCard } from '../../components/ComponentesServicos/ServicosCard';
 import WebImagem from '../../assets/LandingServiços/plataformaWeb.png'
 import MobileImagem from '../../assets/LandingServiços/aplicativoMobile.png'
 import personalizadaImagem from '../../assets/LandingServiços/solucoesPersonalizadas.png'
@@ -9,6 +9,7 @@ const PaginaServicos = () => {
   const servicos = [
     {
       title: "Plataformas Web",
+      id: "plataformasWeb",
       description: "Criamos sites e sistemas web rápidos, modernos e preparados para gerar resultados reais.",
       imageUrl: WebImagem,
       
@@ -52,6 +53,7 @@ const PaginaServicos = () => {
 
     {
       title: "Aplicativos Mobile",
+      id: "aplicativosMobile",
       imageUrl: MobileImagem,
       description: "Desenvolvemos aplicativos modernos para Android e iOS com foco em performance e experiência do usuário.",
 
@@ -94,6 +96,7 @@ const PaginaServicos = () => {
 
     {
       title: "Soluções Personalizadas",
+      id: "solucoesPersonalizadas",
       imageUrl: personalizadaImagem,
       description: "Criamos sistemas sob medida para resolver problemas específicos e otimizar processos do seu negócio.",
 
@@ -146,6 +149,7 @@ const PaginaServicos = () => {
         {servicos.map((service, index) => (
           <ServicosCard
             key={index}
+            id={service.id}
             title={service.title}
             description={service.description}
             topics={service.topics}

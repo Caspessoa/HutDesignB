@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { useNavegacao } from "./components/ComponentesServicos/useNavegacao.js";
 import Header from "./components/Header.jsx";
 import Hero from "./sections/Landing2/Hero.jsx"
 import Historia from "./sections/Landing2/Historia.jsx";
@@ -16,10 +17,13 @@ import Bg1 from "./components/Backgrounds/Bg1.jsx";
 import Bg2 from "./components/Backgrounds/Bg2.jsx";
 import CardServicos from './sections/Servicos/ServicePages.jsx'
 
+
 function App() {
   // página inicial padrão
   const [secaoAtiva, setSecaoAtiva] = useState("home");
   
+  const { navegarParaServico } = useNavegacao(setSecaoAtiva);
+
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       
@@ -34,14 +38,14 @@ function App() {
           <Hero />
           <Historia />
           <QuemSomos />
-          <Section3 />
+          <Section3 navegarParaServico={navegarParaServico} />
           <Orcamento />
           </>
         )}
 
         {secaoAtiva === "projetos" && (
           <Bg1>
-            <Section1 /> {/* section1 da landing projetos */}
+            <Section1 /> 
             <Section2 />
             <CTASection />
           </Bg1>
@@ -51,7 +55,6 @@ function App() {
           <Hero />
           <Historia />
           <CardServicos/>
-          <Section3 />
           <Orcamento />
           </>
         )}

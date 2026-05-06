@@ -3,7 +3,7 @@ import monitorIcon from '../../../assets/section3-icons/monitor-icon.svg';
 import codeIcon from '../../../assets/section3-icons/code-icon.svg';
 import smartphoneIcon from '../../../assets/section3-icons/smartphone-icon.svg';
 
-function Section3() {
+function Section3({ navegarParaServico }) {
   return (
     <section className="py-16 bg-[#FFFFFF]">
 
@@ -37,6 +37,7 @@ function Section3() {
             titulo="Plataformas Web" 
             descricao="Sites institucionais, e-commerces e sistemas web robustos. Levamos seu negócio para a internet com tecnologia de ponta." 
             corFundoIcone="bg-[#6B0F9C1A]"
+            aoClicar={() => navegarParaServico("plataformasWeb")}
           />
 
           {/* --- CARD 2: APLICATIVOS MOBILE --- */}
@@ -44,7 +45,8 @@ function Section3() {
             icone={smartphoneIcon} 
             titulo="Aplicativos Mobile" 
             descricao="Esteja sempre perto de seus clientes. Desenvolvimento de aplicativos nativos e híbridos para iOS e Android." 
-            corFundoIcone="bg-[#6B0F9C1A]"
+            corFundoIcone="bg-[#A4DE021A]"
+            aoClicar={() => navegarParaServico("aplicativosMobile")}
           />
 
 
@@ -53,6 +55,8 @@ function Section3() {
             icone={codeIcon} 
             titulo="Soluções Personalizadas" 
             descricao="Tem uma ideia inovadora? Transformamos sua visão em software funcional com consultoria especializada."
+            corFundoIcone="bg-[#A855F71A]"
+            aoClicar={() => navegarParaServico("solucoesPersonalizadas")}
           />
         </div>
       </div>

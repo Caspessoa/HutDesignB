@@ -1,11 +1,7 @@
-// Adicionei a prop "reverse" aqui
-const ServicosCard = ({ title, description, topics, imageUrl, imageAlt, reverse }) => {
+export const ServicosCard = ({ id, title, description, topics, imageUrl, imageAlt}) => {
   return (
-    <div className={`
-      bg-white rounded-2xl shadow-md p-8 hover:shadow-lg transition 
-      flex flex-col lg:flex-row gap-10 items-center
-      ${reverse ? 'lg:flex-row-reverse' : ''} // Isso faz a mágica da inversão
-    `}>
+    <div id={id} className=
+      "bg-white rounded-2xl shadow-md p-8 hover:shadow-lg transition flex flex-col lg:flex-row gap-10 items-center scroll-mt-28">
       
       {/* Coluna do Conteúdo */}
       <div className="flex-1">
@@ -51,5 +47,3 @@ const ServicosCard = ({ title, description, topics, imageUrl, imageAlt, reverse 
     </div>
   );
 };
-
-export default ServicosCard;
