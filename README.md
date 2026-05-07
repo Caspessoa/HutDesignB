@@ -1,18 +1,63 @@
-# React + Vite
+# Hut8 - Processo Seletivo (Etapa Final)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Repositório dedicado ao desenvolvimento do site da **Hut8** (Empresa Júnior de Computação da UFPel). Este projeto integra a etapa final do processo seletivo de estágio.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* [React](https://reactjs.org/)
+* [Vite](https://vitejs.dev/)
+* [Tailwind CSS](https://tailwindcss.com/)
 
-## React Compiler
+## Equipe
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+* [Cassiano Pessoa](https://github.com/Caspessoa)
+* [Alan Farias](https://github.com/AlanF4rias)
+* [Pedro Bortoli](https://github.com/PedroMBortoli)
+* [Kenzo Takahashi](https://github.com/KenzoTakas)
 
-Note: This will impact Vite dev & build performances.
+## Estrutura de Pastas (genérico por enquanto)
 
-## Expanding the ESLint configuration
+```text
+├── public/             # Arquivos estáticos não processados
+├── src/
+│   ├── assets/         # Imagens, vetores e mídias do projeto
+│   ├── components/     # Componentes globais e reutilizáveis (Header, Footer, Backgrounds)
+│   ├── sections/       # Estruturas de seção divididas por páginas (Home, Projetos, Equipe)
+│   ├── App.jsx         # Componente raiz e controle de estado de renderização
+│   ├── main.jsx        # Ponto de entrada e injeção do React no DOM
+│   └── index.css       # Diretivas do Tailwind e estilos globais
+├── index.html          # Template HTML principal
+├── package.json        # Mapeamento de dependências e scripts
+├── tailwind.config.js  # Configurações de design system e tema
+└── vite.config.js      # Configurações do bundler
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Como Executar Localmente
+
+### Pré-requisitos
+* **[Node.js](https://nodejs.org/)** instalado.
+* **[Git](https://git-scm.com/)** instalado.
+
+### Passo a passo
+
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/Caspessoa/HutDesignB.git
+   ```
+
+2. **Acesse o diretório do projeto**
+   ```bash
+   cd HutDesignB
+   ```
+
+3. **Instale as dependências**
+   ```bash
+   npm install
+   ```
+
+4. **Inicie o servidor de desenvolvimento**
+   ```bash
+   npm run dev
+   ```
+
+Acesse o link local gerado no terminal (ex: `http://localhost:5173/`) no seu navegador.
