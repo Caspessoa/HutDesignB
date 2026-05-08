@@ -141,10 +141,6 @@ const PaginaServicos = () => {
   return (
     <section className="max-w-6xl mx-auto py-16 px-4">
       
-      <h2 className="font-bold text-3xl text-center mb-10 text-gray-800">
-        Nossos Serviços
-      </h2>
-
       <div className="flex flex-col gap-8">
         {servicos.map((service, index) => (
           <ServicosCard
