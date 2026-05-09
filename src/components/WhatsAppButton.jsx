@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import whatsAppIcon from '../assets/whatsAppIcon.svg';
 
-const WhatsAppButton = () => {
+const WhatsAppButton = ({ showForm, setShowForm }) => {
 
-  // Controle de estado para abrir/fechar o formulário e expandir o botão
-  const [showForm, setShowForm] = useState(false);
 
   // Impede o navegador de recarregar a página
   const handleFormSubmit = (e) => {
