@@ -15,22 +15,42 @@ Repositório dedicado ao desenvolvimento do site da **Hut8** (Empresa Júnior de
 * [Pedro Bortoli](https://github.com/PedroMBortoli)
 * [Kenzo Takahashi](https://github.com/KenzoTakas)
 
-## Estrutura de Pastas (genérico por enquanto)
+## Estrutura de Pastas
 
 ```text
-├── public/             # Arquivos estáticos não processados
+├── public/                 # Arquivos estáticos globais
 ├── src/
-│   ├── assets/         # Imagens, vetores e mídias do projeto
-│   ├── components/     # Componentes globais e reutilizáveis (Header, Footer, Backgrounds)
-│   ├── sections/       # Estruturas de seção divididas por páginas (Home, Projetos, Equipe)
-│   ├── App.jsx         # Componente raiz e controle de estado de renderização
-│   ├── main.jsx        # Ponto de entrada e injeção do React no DOM
-│   └── index.css       # Diretivas do Tailwind e estilos globais
-├── index.html          # Template HTML principal
-├── package.json        # Mapeamento de dependências e scripts
-├── tailwind.config.js  # Configurações de design system e tema
-└── vite.config.js      # Configurações do bundler
-```
+│   ├── assets/             # Mídias modularizadas por componente/seção
+│   │   ├── EquipeGallery/
+│   │   ├── EquipeMembers/
+│   │   ├── Footer/
+│   │   ├── Header/
+│   │   ├── HomeAbout/
+│   │   ├── HomeHero/
+│   │   ├── HomePortfolio/
+│   │   ├── ProjetosHero/
+│   │   ├── ProjetosPortfolio/
+│   │   ├── ServicosCards/
+│   │   └── WhatsAppButton/
+│   ├── components/         # Componentes globais e reutilizáveis
+│   ├── data/               # Arquivos de dados estáticos ou mocks
+│   ├── sections/           # Páginas e suas seções específicas
+│   │   ├── Equipe/
+│   │   ├── Home/
+│   │   ├── Projetos/
+│   │   └── Servicos/
+│   ├── App.jsx             # Componente raiz
+│   ├── index.css           # Estilos globais e Tailwind
+│   └── main.jsx            # Ponto de entrada do React
+├── .gitignore
+├── eslint.config.js        # Configuração do linter
+├── index.html              # Template base
+├── LICENSE                 # Licença do projeto
+├── package-lock.json       # Árvore de dependências travada
+├── package.json            # Scripts e dependências do projeto
+├── README.md               # Documentação principal
+└── vite.config.js          # Configuração do bundler
+``` 
 
 ## Como Executar Localmente
 
