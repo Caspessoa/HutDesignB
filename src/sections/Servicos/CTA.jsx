@@ -1,6 +1,6 @@
 function CTAServicos() {
   return (
-    <section className="max-w-[1700px] mx-auto relative mt-6 mb-40 py-20 px-6 overflow-hidden bg-[#0E0E12E5] rounded-[24px]">
+    <section className="ml-10 mr-10 max-w-[1700px] mx-auto relative mt-6 mb-40 py-20 px-6 overflow-hidden bg-[#0E0E12E5] rounded-[24px]">
       
       {/* ESFERAS DESFOCADAS */}
       <div aria-hidden="true" className="absolute top-5 right-5 h-60 w-60 rounded-full bg-[#813BBE33] blur-2xl"></div>
