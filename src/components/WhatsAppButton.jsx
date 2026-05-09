@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import whatsAppIcon from '../assets/whatsAppIcon.svg';
+import whatsAppIcon from '../assets/WhatsAppButton/whatsAppIcon.svg';
 
 const WhatsAppButton = () => {
 
@@ -27,7 +27,7 @@ const WhatsAppButton = () => {
     `*Mensagem:* ${mensagem}`;
 
   // Redireciona para a API do WhatsApp com o esqueleto da mensagem pronto (Numero genérico não funcional, quando for utilizar necessario mudar)
-  const urlFinal = `https://wa.me/55539999999?text=${mensagemPronta}`;
+  const urlFinal = `https://wa.me/555384153743?text=${mensagemPronta}`;
   
   window.open(urlFinal, '_blank'); 
   setShowForm(false); // Fecha o formulário

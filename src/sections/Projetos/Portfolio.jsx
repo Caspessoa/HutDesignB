@@ -1,14 +1,15 @@
-import { FeaturedCardToni } from "/src/components/Section2-projetos/FeaturedCardToni.jsx";
-import { FeaturedCardPastejando} from "/src/components/Section2-projetos/FeaturedCardPastejando.jsx";
-import { FeaturedCardAdmin } from "/src/components/Section2-projetos/FeaturedCardAdmin.jsx";
-import { FeaturedCardPlante } from "../../../components/Section2-projetos/FeaturedCardPlante";
-import Computador from '../../../assets/section2-projetos/hut-admin-image.png';
-import Vaca from '../../../assets/section2-projetos/pastejando-image.png';
-import Imovel from '../../../assets/section2-projetos/toni-neutzling-image.png';
-import Plantas from '../../../assets/section2-projetos/plante-saude-image.png';
-import Trator from "../../../assets/section2-projetos/trator-icon.svg";
+import { FeaturedCardToni } from "/src/components/ProjetosPortfolio/FeaturedCardToni.jsx";
+import { FeaturedCardPastejando} from "/src/components/ProjetosPortfolio/FeaturedCardPastejando.jsx";
+import { FeaturedCardAdmin } from "/src/components/ProjetosPortfolio/FeaturedCardAdmin.jsx";
+import { FeaturedCardPlante } from "/src/components/ProjetosPortfolio/FeaturedCardPlante";
 
-function Section2() {
+import Computador from '../../assets/ProjetosPortfolio/hut-admin-image.png';
+import Vaca from '../../assets/ProjetosPortfolio/pastejando-image.png';
+import Imovel from '../../assets/ProjetosPortfolio/toni-neutzling-image.png';
+import Plantas from '../../assets/ProjetosPortfolio/plante-saude-image.png';
+import Trator from "../../assets/ProjetosPortfolio/trator-icon.svg";
+
+export default function Portfolio() {
   return (
     <section className="w-full max-w-[1710px] mx-auto px-4 py-10">
       <div className="flex flex-wrap gap-[32px] w-full">
@@ -66,4 +67,3 @@ function Section2() {
     </section>
   );
 }
-export default Section2;

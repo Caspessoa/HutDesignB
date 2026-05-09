@@ -1,4 +1,4 @@
-function Hero() {
+export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#F9FAFB] py-20 px-6">
       
@@ -46,7 +46,7 @@ function Hero() {
           <div className="absolute -bottom-10 -left-10 h-32 w-32 rounded-full bg-[#6B0F9C] opacity-25 blur-md"></div>
           
           <img
-            src="/src/assets/estudantes.png"
+            src="/src/assets/HomeHero/estudantes.png"
             alt="Equipe"
             className="relative w-full h-full object-cover rounded-lg shadow-lg"
           />
@@ -70,4 +70,3 @@ function Hero() {
     </section>
   );
 }
-export default Hero;

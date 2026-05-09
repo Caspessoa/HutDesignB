@@ -1,4 +1,4 @@
-import CheckIcon from '../../assets/section2-projetos/check-icon.svg'
+import CheckIcon from '../../assets/ProjetosPortfolio/check-icon.svg'
 export function FeaturedCardAdmin({ titulo, descricao, imagem }) {
   return (
     

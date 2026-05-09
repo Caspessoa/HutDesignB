@@ -1,11 +1,11 @@
 import React from 'react';
-import TeamMetting from '../../assets/TeamMetting.png';
-import ufpel from '../../assets/ufpel.png';
+import TeamMetting from '../../assets/HomeAbout/TeamMetting.png';
+import ufpel from '../../assets/HomeAbout/ufpel.png';
 import { IoSchoolSharp } from "react-icons/io5";
 import { IoCheckmarkCircle } from "react-icons/io5";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
 
-function About() {
+export default function About() {
   return (
         <section className="w-full py-20 pt-20 pb-20 bg-[#F9FAFB]">
             <div className="max-w-6xl mx-auto px-6 lg:px-8 flex items-center gap-6">
@@ -55,4 +55,3 @@ function About() {
         </section>
  );
 }
-export default About;

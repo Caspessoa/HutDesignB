@@ -1,4 +1,4 @@
-export default function Section1() {
+export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-transparent py-20 px-6">      
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 items-center">
@@ -31,7 +31,7 @@ export default function Section1() {
           <div class="absolute -bottom-1 -top-1 -right-12 h-32 w-32 rounded-full bg-[#A4DE02] opacity-25 blur-md"></div>
           
           <img
-            src="/src/assets/LandingProjetos/image1.png"
+            src="/src/assets/ProjetosHero/holograma.png"
             alt="Equipe"
             className="relative w-full h-full object-cover rounded-lg shadow-lg"
           />

@@ -1,10 +1,10 @@
 import React from "react";
 import { FiGithub } from "react-icons/fi";
 import { CiLinkedin } from "react-icons/ci";
-import LucasAlmeida from "../../assets/EquipeSection3/LucasAlmeida.png";
-import BiaSantos from "../../assets/EquipeSection3/BiaSantos.png";
-import RicardoOliveira from "../../assets/EquipeSection3/RicardoOliveira.png";
-import CarlaMendes from "../../assets/EquipeSection3/CarlaMendes.png";
+import LucasAlmeida from "../../assets/EquipeGallery/LucasAlmeida.png";
+import BiaSantos from "../../assets/EquipeGallery/BiaSantos.png";
+import RicardoOliveira from "../../assets/EquipeGallery/RicardoOliveira.png";
+import CarlaMendes from "../../assets/EquipeGallery/CarlaMendes.png";
 
 
 const team = [

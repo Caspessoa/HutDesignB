@@ -21,7 +21,7 @@ export default function EquipeSection2(){
                         
                             {/* Fotos */}
                             <div className="w-32 h-32 bg-gray-300 rounded-xl shrink-0 overflow-hidden">
-                                <img src="/src/assets/LandingEquipe/Professores/Dr. Marcos Silva.png" alt="Foto" className="w-full h-full object-cover" />
+                                <img src="/src/assets/EquipeMembers/Professores/Dr. Marcos Silva.png" alt="Foto" className="w-full h-full object-cover" />
                             </div>
                             <div className="flex flex-col">
                                 <h3 className="text-gray-900 font-bold text-xl">Dr. Marcos Silva</h3>
@@ -47,7 +47,7 @@ export default function EquipeSection2(){
                         
                             {/* Fotos */}
                             <div className="w-32 h-32 bg-gray-300 rounded-xl shrink-0 overflow-hidden">
-                                <img src="/src/assets/LandingEquipe/Professores/Dra. Helena Costa.png" alt="Foto" className="w-full h-full object-cover" />
+                                <img src="/src/assets/EquipeMembers/Professores/Dra. Helena Costa.png" alt="Foto" className="w-full h-full object-cover" />
                             </div>
                             <div className="flex flex-col">
                                 <h3 className="text-gray-900 font-bold text-xl">Dr. Helena Costa</h3>

@@ -1,4 +1,4 @@
-import logoHut from '../assets/hut.svg';
+import logoHut from '../assets/Header/hut.svg';
 
 export default function Header({ setSecaoAtiva }){
     return (

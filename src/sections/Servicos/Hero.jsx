@@ -34,7 +34,7 @@ function HeroServicos() {
           <div className="absolute -bottom-10 -left-10 h-32 w-32 rounded-full bg-[#6B0F9C] opacity-25 blur-md"></div>
           
           <img
-            src="src/assets/LandingServiços/servicosHeader.png"
+            src="src/assets/ServicosCards/servicosHeader.png"
             alt="Equipe trabalhando"
             className="relative w-full h-full object-cover rounded-lg shadow-lg"
           />

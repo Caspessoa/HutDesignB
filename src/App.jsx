@@ -1,25 +1,30 @@
 import React from "react";
 import { useState } from "react";
-import { useNavegacao } from "./components/ComponentesServicos/useNavegacao.js";
+import { useNavegacao } from "./components/ServicosCards/useNavegacao.js";
 import Header from "./components/Header.jsx";
 import WhatsAppButton from "./components/WhatsAppButton.jsx";
-import Hero from "./sections/Landing2/Hero.jsx"
-import Historia from "./sections/Landing2/Historia.jsx";
-import QuemSomos from "./sections/Landing2/QuemSomos.jsx";
-import Orcamento from "./sections/Landing2/Orcamento.jsx";
 import Footer from "./components/Footer.jsx";
-import Section3 from './sections/Landing2/Section3/Section3';
-import Section1 from './sections/Projetos/Section1.jsx';
-import CTASection from './sections/Projetos/CTASection.jsx';
-import Section2 from "./sections/Projetos/Section2/Section2.jsx";
-import EquipeSection1 from './sections/Equipe/EquipeSection1.jsx';
-import EquipeSection2 from './sections/Equipe/EquipeSection2.jsx';
-import EquipeSection3 from './sections/Equipe/EquipeSection3.jsx';
 import Bg1 from "./components/Backgrounds/Bg1.jsx";
 import Bg2 from "./components/Backgrounds/Bg2.jsx";
-import HeroServicos from "./sections/Servicos/HeroServicos.jsx" 
-import CardServicos from './sections/Servicos/ServicePages.jsx'
-import CTAServicos from "./sections/Servicos/CTAServicos.jsx";
+
+import HomeHero from "./sections/Home/Hero.jsx"
+import HomeStats from "./sections/Home/Stats.jsx";
+import HomeAbout from "./sections/Home/About.jsx";
+import HomePortfolio from './sections/Home/Features/Portfolio';
+import HomeContact from "./sections/Home/Contact.jsx";
+
+import ProjetosHero from './sections/Projetos/Hero.jsx';
+import ProjetosCTA from './sections/Projetos/CTA.jsx';
+import ProjetosPortfolio from "./sections/Projetos/Portfolio.jsx";
+
+import ServicosHero from "./sections/Servicos/Hero.jsx" 
+import ServicosCards from './sections/Servicos/Cards.jsx'
+import ServicosCTA from "./sections/Servicos/CTA.jsx";
+
+import EquipeHero from './sections/Equipe/Hero.jsx';
+import EquipeMembers from './sections/Equipe/Members.jsx';
+import EquipeGallery from './sections/Equipe/Gallery.jsx';
+
 
 function App() {
   // página inicial padrão
@@ -33,17 +38,17 @@ function App() {
       <Header setSecaoAtiva={setSecaoAtiva} />
 
       {/* Conteúdo principal */}
-      <div className="flex-grow">
+      <div className="grow">
         {/* renderiza apenas o bloco correspondente atual */}
 
         {secaoAtiva === "home" && (
           <>
-          <Hero />
+          <HomeHero />
           <WhatsAppButton />
-          <Historia />
-          <QuemSomos />
-          <Section3 navegarParaServico={navegarParaServico} />
-          <Orcamento />
+          <HomeStats />
+          <HomeAbout />
+          <HomePortfolio navegarParaServico={navegarParaServico} />
+          <HomeContact />
           </>
         )}
 
@@ -51,38 +56,28 @@ function App() {
           <>
           <Bg1>
             <WhatsAppButton />
-            <Section1 /> {/* section1 da landing projetos */}
-            <Section2 />
-            <CTASection />
+            <ProjetosHero /> {/* section1 da landing projetos */}
+            <ProjetosPortfolio />
+            <ProjetosCTA />
           </Bg1>
           </>
         )}
         {secaoAtiva === "servicos" && (
           <>
-          <HeroServicos/>
+          <ServicosHero/>
           <WhatsAppButton />
-          <CardServicos/>
-          <CTAServicos/>
+          <ServicosCards/>
+          <ServicosCTA/>
           </>
         )}
         {secaoAtiva === "equipe" && (
           <>
           <Bg2>
-            <EquipeSection1 />
+            <EquipeHero />
             <WhatsAppButton />
-            <EquipeSection2 />
-            <EquipeSection3 />
+            <EquipeMembers />
+            <EquipeGallery />
           </Bg2>
-          </>
-        )}
-        {secaoAtiva === "contato" && (
-          <>
-          <Hero />
-          <WhatsAppButton />
-          <Historia />
-          <QuemSomos />
-          <Section3 />
-          <Orcamento />
           </>
         )}
         
