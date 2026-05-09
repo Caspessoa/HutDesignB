@@ -27,10 +27,13 @@ function App() {
   
   const { navegarParaServico } = useNavegacao(setSecaoAtiva);
 
+  const [showForm, setShowForm] = useState(false);
+
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       
-      <Header setSecaoAtiva={setSecaoAtiva} />
+      <Header setSecaoAtiva={setSecaoAtiva} 
+              setShowForm={setShowForm}/>
 
       {/* Conteúdo principal */}
       <div className="flex-grow">
@@ -39,7 +42,6 @@ function App() {
         {secaoAtiva === "home" && (
           <>
           <Hero />
-          <WhatsAppButton />
           <Historia />
           <QuemSomos />
           <Section3 navegarParaServico={navegarParaServico} />
@@ -50,7 +52,6 @@ function App() {
         {secaoAtiva === "projetos" && (
           <>
           <Bg1>
-            <WhatsAppButton />
             <Section1 /> {/* section1 da landing projetos */}
             <Section2 />
             <CTASection />
@@ -60,7 +61,6 @@ function App() {
         {secaoAtiva === "servicos" && (
           <>
           <HeroServicos/>
-          <WhatsAppButton />
           <CardServicos/>
           <CTAServicos/>
           </>
@@ -69,7 +69,6 @@ function App() {
           <>
           <Bg2>
             <EquipeSection1 />
-            <WhatsAppButton />
             <EquipeSection2 />
             <EquipeSection3 />
           </Bg2>
@@ -78,7 +77,6 @@ function App() {
         {secaoAtiva === "contato" && (
           <>
           <Hero />
-          <WhatsAppButton />
           <Historia />
           <QuemSomos />
           <Section3 />
@@ -87,6 +85,12 @@ function App() {
         )}
         
       </div>
+      
+      {/* Botão flutuante do whatsapp */}
+      <WhatsAppButton
+        showForm={showForm}
+        setShowForm={setShowForm}
+      />
 
       {/* Footer sempre no final */}
       <Footer />
