@@ -1,10 +1,10 @@
-import { ServicosCard } from '../../components/ComponentesServicos/ServicosCard';
-import WebImagem from '../../assets/LandingServiços/plataformaWeb.png'
-import MobileImagem from '../../assets/LandingServiços/aplicativoMobile.png'
-import personalizadaImagem from '../../assets/LandingServiços/solucoesPersonalizadas.png'
+import { ServicosCard } from '../../components/ServicosCards/ServicosCard';
+import WebImagem from '../../assets/ServicosCards/plataformaWeb.png'
+import MobileImagem from '../../assets/ServicosCards/aplicativoMobile.png'
+import personalizadaImagem from '../../assets/ServicosCards/solucoesPersonalizadas.png'
 
 
-const PaginaServicos = () => {
+const Cards = () => {
 
   const servicos = [
     {
@@ -158,4 +158,4 @@ const PaginaServicos = () => {
   );    
 };
 
-export default PaginaServicos;
+export default Cards;

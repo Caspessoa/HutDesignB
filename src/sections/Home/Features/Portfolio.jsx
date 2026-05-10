@@ -1,9 +1,9 @@
-import {Card} from '../../../components/Section3-components/card';
-import monitorIcon from '../../../assets/section3-icons/monitor-icon.svg';
-import codeIcon from '../../../assets/section3-icons/code-icon.svg';
-import smartphoneIcon from '../../../assets/section3-icons/smartphone-icon.svg';
+import {Card} from '../../../components/HomePortfolio/card';
+import monitorIcon from '../../../assets/HomePortfolio/monitor-icon.svg';
+import codeIcon from '../../../assets/HomePortfolio/code-icon.svg';
+import smartphoneIcon from '../../../assets/HomePortfolio/smartphone-icon.svg';
 
-function Section3({ navegarParaServico }) {
+function Portfolio({ navegarParaServico }) {
   return (
     <section className="py-16 bg-[#FFFFFF]">
 
@@ -63,4 +63,4 @@ function Section3({ navegarParaServico }) {
     </section>
   );
 }
-export default Section3;
+export default Portfolio;

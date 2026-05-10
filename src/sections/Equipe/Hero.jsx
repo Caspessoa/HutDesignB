@@ -28,7 +28,7 @@ export default function EquipeSection1() {
           <div className="relative w-full lg:w-1/2 mt-10 lg:mt-0 mb-16 lg:mb-0">
           {/* aspect-video força a proporção 16:9 (widescreen), abrindo a imagem */}
             <img
-              src="/src/assets/LandingEquipe/sunset.png"
+              src="/src/assets/EquipeMembers/sunset.png"
               alt="Equipe"
               className="w-full aspect-video object-cover rounded-3xl shadow-lg"
             />

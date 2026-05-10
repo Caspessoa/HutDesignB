@@ -1,6 +1,4 @@
-
-
-export function FeaturedCardToni({ titulo, descricao, imagem, tag, tagsSecundarias = [], metrica, corSombra, icone }) {
+export function FeaturedCardToni({ titulo, descricao, imagem, tag, tagsSecundarias = [], metrica, corSombra}) {
 
   const estiloFundo = {
     backgroundImage: `linear-gradient(to top, ${corSombra || 'rgba(0,0,0,0.9)'} 0%, rgba(0,0,0,0) 70%), url(${imagem})`,
