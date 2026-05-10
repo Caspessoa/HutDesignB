@@ -1,6 +1,6 @@
 import React from "react";
 import { footerLinks } from "../data/footerData";
-import logoHut from "../assets/footer/logoHut.svg";
+import logoHut from "../assets/Footer/logoHut.svg";
 import { FiInstagram, FiFacebook, FiTwitter, FiLinkedin, FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 
 const Footer = () => {
