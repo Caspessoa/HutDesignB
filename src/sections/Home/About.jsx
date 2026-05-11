@@ -8,7 +8,7 @@ import { RiMoneyDollarCircleFill } from "react-icons/ri";
 export default function About() {
   return (
         <section className="w-full py-20 pt-20 pb-20 bg-[#F9FAFB]">
-            <div className="max-w-6xl mx-auto px-6 lg:px-8 flex items-center gap-6">
+            <div className="max-w-6xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-6">
                 <div className="relative flex items-center justify-center bg-gray-50">
                     {/* Imagem da Esquerda */}
                     <div className="w-[280px] h-[250px] overflow-hidden flex-shrink-0 transform translate-y-8">

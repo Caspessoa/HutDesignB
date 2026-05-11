@@ -9,16 +9,16 @@ export default function Hero() {
         <div className="absolute -bottom-10 -left-10 h-72 w-72 rounded-full bg-[#A4DE02] opacity-20 blur-3xl"></div>
 
         {/* LADO ESQUERDO: HEADER, DESCRIÇÃO E BOTÕES */}
-        <div className="flex-1">
+        <div className="flex-1 w-full lg:w-1/2">
                     
           <div className="inline-flex items-center bg-[#6B0F9C1A] gap-2 px-3 py-1 rounded-full border-1 border-[#6B0F9C33]">
             <div className="w-2 h-2 bg-[#A4DE02] rounded-full"></div>
             <span className="text-[#6B0F9C] font-semibold text-[14px] leading-[20px] bg-[]">Inovação em Tecnologia</span>
           </div>
 
-          <h1 className="text-[#1F2937] font-extrabold text-[60px] leading-[60px] tracking-[0.7px]">
+          <h1 className="text-[#1F2937] font-extrabold text-[60px] leading-[60px] tracking-[0.7px] break-words">
             Empresa Júnior de{" "}
-            <span className="whitespace-nowrap bg-gradient-to-r from-[#6C109D] to-[#A854F6] bg-clip-text text-transparent">Computação - UFPel</span>
+            <span className="bg-gradient-to-r from-[#6C109D] to-[#A854F6] bg-clip-text text-transparent">Computação - UFPel</span>
           </h1>
 
           <p className="text-[#4B5563] text-[20px] leading-[28px]  mt-6">
