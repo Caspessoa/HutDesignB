@@ -2,7 +2,7 @@ export default function EquipeSection1() {
   return (
     <section className="relative overflow-hidden bg-transparent py-20 px-6">   
 
-        <div className="relative z-10 max-w-6xl mx-auto">
+        <div className="relative z-500 max-w-6xl mx-auto">
           
         {/* PARTE SUPERIOR: TEXTO E IMAGEM */}
         <div className="flex flex-col lg:flex-row gap-10 items-center">
