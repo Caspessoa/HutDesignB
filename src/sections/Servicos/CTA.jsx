@@ -1,4 +1,4 @@
-function CTAServicos() {
+export default function CTA() {
   return (
     <section className="px-6 sm:px-10 mt-6 mb-40">
       <div className="max-w-[1700px] mx-auto relative py-20 px-6 overflow-hidden bg-[#0E0E12E5] rounded-[24px]">
@@ -35,4 +35,4 @@ function CTAServicos() {
       </div>
     </section>
   );
-} export default CTAServicos;
+}
